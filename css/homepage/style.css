@@ -1,107 +1,170 @@
+/* ! Reset base */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Gyroscope Sans', sans-serif;
+}
+
+/* ! Logo */
+
+.logo {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
 
 }
+
 /* ! Contenitore navbar */
 .nav-homepage .navbar {
     width: 100%;
-    background-color: #ffffff;  
+    background-color: #e9e8e8;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 32px;  /* ! padding orizzontale/verticale */
+    padding: 5px 32px;
     box-sizing: border-box;
-  }
-  
-  /* ! Brand / Logo */
-  .navbar-title {
-    font-family: 'Gyroscope Sans', sans-serif;  /* ! font personalizzato */
+}
+
+/* ! Brand / Logo */
+.navbar-title {
+    font-family: 'Gyroscope Sans', sans-serif;
     color: #000000;
     margin: 0;
-    font-size: 28px;  
-  }
-  
-  /* ! Bottone toggler per mobile */
-  .navbar-toggler {
-    display: none;  /* ! attivabile via media query */
+    font-size: 28px;
+    white-space: nowrap;
+    /* ! Evita che il testo vada a capo */
+}
+
+/* ! Bottone toggler per mobile */
+.navbar-toggler {
+    display: none;
     background: none;
     border: none;
     color: #000000;
-    font-size: 24px;  
+    font-size: 24px;
     cursor: pointer;
-  }
-  
-  /* ! Lista link navbar */
-  .nav-list {
+}
+
+/* ! Lista link navbar */
+.nav-list {
     list-style: none;
-    display: flex;           
-    gap: 32px;               /* ! distanza tra link */
+    display: flex;
+    gap: 32px;
     margin: 0;
     padding: 0;
-  }
-  
-  .nav-list li a {
+}
+
+.nav-list li a {
     text-decoration: none;
     color: #000000;
     font-weight: 500;
-    transition: color 0.1s;  /* ! effetto hover */
-  }
-  
-  .nav-list li a:hover {
-    color: #949494;  /* ! colore hover */
-  }
-  
-  /* ! Responsive: menu mobile */
-  @media (max-width: 768px) {
-    .navbar-toggler {
-      display: block;  /* ! mostra toggler su mobile */
-    }
-  
-    .navbar-links {
-      display: none;        
-      flex-direction: column;
-      gap: 16px;  /* ! distanza verticale tra link */
-      margin-top: 16px;
-    }
-  
-    .navbar-links.active {
-      display: flex;  /* ! visibile quando toggler attivo */
-    }
-  
-    .nav-list {
-      flex-direction: column;
-      gap: 16px;  /* ! distanza verticale tra link */
-    }
-  }
-  
-  
+    transition: color 0.1s;
+}
 
+.nav-list li a:hover {
+    color: #949494;
+}
+
+/* ! Responsive: menu mobile */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+        /* ! mostra toggler su mobile */
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 16px;
+        /* ! distanza verticale tra link */
+        margin-top: 16px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        /* ! visibile quando toggler attivo */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+/* ! Sezione principale */
 .homepagecentre {
     margin: 0;
     padding: 200px;
-
 }
 
+/* ! Titolo principale */
 .alessandroschianotitle {
-    font-family: 'Gyroscope Sans';
-    src: url('../fonts/GyroscopeSans-Regular.woff2') format('woff2'),
-        url('../fonts/GyroscopeSans-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-size: 135px;
+    font-family: 'Gyroscope Sans', sans-serif;
+    font-size: clamp(60px, 10vw, 135px);
+    /* ! Scala fluida su schermi diversi */
     text-align: center;
     font-weight: bold;
+    white-space: nowrap;
+    /* ! Impedisce il ritorno a capo */
 }
 
+/* ! Sottotitolo */
 .alessandroschianosubtitle {
-    font-family: 'Gyroscope Sans';
-    src: url('../fonts/GyroscopeSans-Regular.woff2') format('woff2'),
-        url('../fonts/GyroscopeSans-Regular.woff') format('woff');
-    display: flex;    
-    font: 50px;;
+    font-family: 'Gyroscope Sans', sans-serif;
+    display: flex;
+    font-size: clamp(24px, 5vw, 50px);
+    /* ! Scala dinamica e leggibile */
     font-weight: bold;
-    gap: 180px;             
+    gap: 180px;
     justify-content: center;
+    flex-wrap: nowrap;
+    /* ! Impedisce che i sottotitoli vadano a capo */
+}
+
+/* ! Sezione palette colori (3 cubi in basso a destra) */
+.color-palette {
+    position: fixed;
+    bottom: 32px;
+    /* ! Distanza dal fondo */
+    right: 32px;
+    /* ! Distanza dal bordo destro */
+    display: flex;
+    flex-direction: column;
+    /* ! Disposti in colonna */
+    gap: 12px;
+    /* ! Spazio tra i cubi */
+    z-index: 1000;
+    /* ! Sempre sopra altri elementi */
+}
+
+/* ! Singolo cubo */
+.cube {
+    width: 30px;
+    height: 30px;
+    border-radius: 150px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* ! Effetto hover */
+.cube:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* ! Colori palette personalizzabili */
+.cube1 {
+    background-color: #000000;
+}
+
+.cube2 {
+    background-color: #e9e8e8;
+}
+
+.cube3 {
+    background-color: #555555;
+}
+
+.cube4 {
+    background-color: #ffffff;
 }
