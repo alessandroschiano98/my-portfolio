@@ -2,7 +2,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Gyroscope Sans', sans-serif;
 }
 
 /* ! Logo */
@@ -23,7 +22,6 @@ body {
     align-items: center;
     padding: 5px 32px;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 /* ! Brand / Logo */
@@ -102,11 +100,9 @@ body {
 .alessandroschianotitle {
     font-family: 'Gyroscope Sans', sans-serif;
     font-size: clamp(60px, 10vw, 135px);
-    /* ! Scala fluida su schermi diversi */
     text-align: center;
     font-weight: bold;
     white-space: nowrap;
-    /* ! Impedisce il ritorno a capo */
 }
 
 /* ! Sottotitolo */
@@ -114,12 +110,11 @@ body {
     font-family: 'Gyroscope Sans', sans-serif;
     display: flex;
     font-size: clamp(24px, 5vw, 50px);
-    /* ! Scala dinamica e leggibile */
+
     font-weight: bold;
     gap: 180px;
     justify-content: center;
     flex-wrap: nowrap;
-    /* ! Impedisce che i sottotitoli vadano a capo */
 }
 
 /* ! Sezione palette colori (3 cubi in basso a destra) */
@@ -140,9 +135,9 @@ body {
 
 /* ! Singolo cubo */
 .cube {
-    width: 30px;
-    height: 30px;
-    border-radius: 150px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -170,6 +165,8 @@ body {
     background-color: #ffffff;
 }
 
+/* ! SEZIONE FOTO */
+
 .photoCube {
     display: flex;
     justify-content: center;
@@ -177,19 +174,19 @@ body {
     width: 280px;
     height: 350px;
     background: linear-gradient(135deg, #eae8e8, #ffffff);
-    border-radius: 120px;       
+    border-radius: 120px;
     border: 1px solid #d8d6d6;
     padding: 10px;
     box-sizing: border-box;
-    overflow: hidden;           
-    margin: 0 auto;             
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .myphoto {
-    width: 100%;              
-    height: 100%;              
-    object-fit: cover;        
-    border-radius: 120px;      
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 120px;
 }
 
 
@@ -203,31 +200,66 @@ body {
 .boxTextBackground {
     display: flex;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 
 }
 
-.boxTextBackgroundInfo {
-    margin: 0;
+/* ! ICONE CITTA' & COMPLEANNO */
+
+.infoColumn {
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.8;
+}
+
+.infoColumn .fi-rr-person-rays {
+    color: rgb(0, 0, 0);
+}
+
+.infoColumn .fi-rr-marker {
+    color: rgb(0, 0, 0);
+}
+
+.infoColumn .fi-rr-calendar {
+    color: rgb(0, 0, 0);
+}
+
+/* ! SKILLS BOX */
+
+.boxSkills {
     display: flex;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    margin-top: 20px;
+}
 
+.boxSkill .info {
+    font-size: 10px;
 
 }
 
-.infoList {
-    margin: 0;
-    padding: auto;
+.info {
+    border-collapse: collapse;
+    width: 80%;           
+    text-align: left;     
 }
 
-
-.infoList li{
-    list-style: none;
-    display: flex;
-    padding: 8px;
+.info td {
+    padding: 10px 15px;
 }
 
+.info tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
 
+.info tr:nth-child(odd) {
+    background-color: #ffffff; 
+}
+
+.info tr:hover {
+    background-color: #ddd; 
+}
