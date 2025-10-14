@@ -4,6 +4,33 @@ body {
     padding: 0;
 }
 
+* /* ! ANIMAZIONE FADE-IN PER HOMEPAGECENTRE */
+.homepagecentre h1,
+.homepagecentre h3 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.homepagecentre.show h1,
+.homepagecentre.show h3 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ! OPZIONALE: ritardo per i sottotitoli (cascata) */
+.homepagecentre.show .webTitle {
+    transition-delay: 0.3s;
+}
+
+.homepagecentre.show .graphicTitle {
+    transition-delay: 0.6s;
+}
+
+.homepagecentre.show .visualTitle {
+    transition-delay: 0.9s;
+}
+
 /* ! Logo */
 
 .logo {
@@ -54,6 +81,7 @@ body {
 }
 
 .nav-list li a {
+    font-family: 'Gyroscope Sans', sans-serif;
     text-decoration: none;
     color: #000000;
     font-weight: 500;
@@ -65,6 +93,7 @@ body {
 }
 
 /* ! Responsive: menu mobile */
+
 @media (max-width: 768px) {
     .navbar-toggler {
         display: block;
@@ -121,15 +150,10 @@ body {
 .color-palette {
     position: fixed;
     bottom: 32px;
-    /* ! Distanza dal fondo */
     right: 32px;
-    /* ! Distanza dal bordo destro */
     display: flex;
-    /* ! Disposti in colonna */
     flex-direction: column;
-    /* ! Spazio tra i cubi */
     gap: 12px;
-    /* ! Spazio tra i cubi */
     z-index: 1000;
 }
 
@@ -206,6 +230,7 @@ body {
 }
 
 .boxTextBackground {
+    font-family: 'Gyroscope Sans', sans-serif;
     display: flex;
     justify-content: center;
     font-size: 20px;
@@ -225,17 +250,6 @@ body {
     line-height: 1.8;
 }
 
-.infoColumn .fi-rr-person-rays {
-    color: rgb(0, 0, 0);
-}
-
-.infoColumn .fi-rr-marker {
-    color: rgb(0, 0, 0);
-}
-
-.infoColumn .fi-rr-calendar {
-    color: rgb(0, 0, 0);
-}
 
 /* ! SKILLS BOX */
 
@@ -271,3 +285,5 @@ body {
 .info tr:hover {
     background-color: #ddd; 
 }
+
+
