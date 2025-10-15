@@ -14,6 +14,22 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".homepagecentre").classList.add("show");
 });
 
+// ! Transizione FRASE
+
+const text = "THE EYES SHAPES VISIONS INTO PROJECTS THAT LEAVE A MARK.";
+const container = document.getElementById("textPhrase");
+let i = 0;
+
+function typeWriter() {
+    if (i < text.length) {
+        container.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100); 
+    }
+}
+
+typeWriter();
+
 
 
 // ! WORKS (page) -------------------------

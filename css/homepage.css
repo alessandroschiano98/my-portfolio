@@ -184,6 +184,24 @@
     background-color: #ffffff;
 }
 
+@import url("/css/font.css"); /* ! FONT IMPORTATO */ 
+.textPhrase {
+    display: flex;
+    justify-content: center;
+    font-size:  30px;
+    font-family: "BBH Sans Bogle", sans-serif;
+}
+
+.textPhrase::after {
+    content: '|';
+    animation: blink 1s infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 5; }
+    25%, 75% { opacity: 0; }
+}
 
 
 
