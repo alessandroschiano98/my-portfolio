@@ -286,8 +286,15 @@ body {
 
 }
 
+@import url("/css/font.css"); /* ! FONT IMPORTATO */ 
+.skillClass {
+  font-family: "BBH Sans Bogle", sans-serif;
+}
+
+
 .info {
     border-collapse: collapse;
+    font-family: "BBH Sans Bogle", sans-serif;
     width: 80%;           
     text-align: left;     
 }
