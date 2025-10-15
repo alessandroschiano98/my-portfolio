@@ -237,7 +237,15 @@ body {
 
 }
 
-/* ! ICONE CITTA' & COMPLEANNO */
+
+@media (max-width: 768px) {
+    .boxTextBackground .p {
+        position: static;
+        text-align: center;
+    }
+}
+
+/* ! INFO [ICONE NOME, CITTA' & DATA NASCITA] */
 
 .infoColumn {
     position: absolute;
@@ -249,6 +257,20 @@ body {
     color: #444;
     line-height: 1.8;
 }
+
+/* ! Responsive: INFO */
+
+@media (max-width: 768px) {
+    .infoColumn {
+      position: static;           
+      transform: none;             
+      text-align: center;          
+      margin-top: 20px;            
+      right: auto;                 
+      top: auto;
+    }
+  }
+  
 
 
 /* ! SKILLS BOX */
