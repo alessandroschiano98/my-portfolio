@@ -1,4 +1,7 @@
 
+
+
+
 * /* ! ANIMAZIONE FADE-IN PER HOMEPAGECENTRE */
 .homepagecentre h1,
 .homepagecentre h3 {
@@ -123,23 +126,51 @@
 /* ! Titolo principale */
 .alessandroschianotitle {
     font-family: 'Gyroscope Sans', sans-serif;
-    font-size: clamp(60px, 10vw, 135px);
+    font-size: clamp(40px, 8vw, 135px);
     text-align: center;
     font-weight: bold;
     white-space: nowrap;
-}
-
-/* ! Sottotitolo */
-.alessandroschianosubtitle {
+    margin: 0;
+    line-height: 1.1;
+  }
+  
+  /* ! Sottotitolo */
+  .alessandroschianosubtitle {
     font-family: 'Gyroscope Sans', sans-serif;
     display: flex;
-    font-size: clamp(24px, 5vw, 50px);
-
-    font-weight: bold;
-    gap: 180px;
     justify-content: center;
-    flex-wrap: nowrap;
-}
+    align-items: center;
+    gap: clamp(40px, 10vw, 180px); 
+    font-size: clamp(20px, 4vw, 50px);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    flex-wrap: nowrap; 
+  }
+  
+  /* ! Reponsive Tablet(SOTTOTITOLO) */
+  @media (max-width: 1024px) {
+    .alessandroschianosubtitle {
+      gap: 60px;
+      flex-wrap: wrap; 
+    }
+  }
+  
+  /* ! Responsive Mobile */
+  @media (max-width: 768px) {
+    .alessandroschianotitle {
+      font-size: clamp(32px, 10vw, 80px);
+      white-space: normal;
+    }
+  
+    .alessandroschianosubtitle {
+      flex-direction: column;
+      gap: 10px;
+      font-size: clamp(18px, 5vw, 30px);
+    }
+  }
+  
+  
 
 /* ! Sezione palette colori (3 cubi in basso a destra) */
 .color-palette {
@@ -183,6 +214,12 @@
 .cube4 {
     background-color: #ffffff;
 }
+
+/* ! Cubi Responsive */
+@media (max-width: 768px) {
+    .color-palette {
+      display: none;
+    }
 
 @import url("/css/font.css"); /* ! FONT IMPORTATO */ 
 .textPhrase {

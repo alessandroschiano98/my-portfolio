@@ -5,7 +5,7 @@ const homepageClick = document.getElementById("homepage-click");
 
 homepageClick.addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.href = "index.html";
+    window.location.href = "homepage.html";
 });
 
 // ! Transizione TITOLO 
@@ -14,9 +14,8 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".homepagecentre").classList.add("show");
 });
 
-// ! Transizione FRASE
-
-const text = "THE EYES SHAPES VISIONS INTO PROJECTS THAT LEAVE A MARK.";
+/*  ! Transizione FRASE
+const text = "Turn your dreams into reality, or they’ll remain just dreams.";
 const container = document.getElementById("textPhrase");
 let i = 0;
 
@@ -28,7 +27,7 @@ function typeWriter() {
     }
 }
 
-typeWriter();
+typeWriter(); */
 
 
 
@@ -51,6 +50,11 @@ aboutmeClick.addEventListener("click", function (event) {
     window.location.href = "aboutme.html";
 });
 
+
+
+  window.addEventListener("load", () => {
+    document.body.classList.add("loaded");
+  });
 
 
 
