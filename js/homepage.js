@@ -14,22 +14,6 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".homepagecentre").classList.add("show");
 });
 
-/*  ! Transizione FRASE
-const text = "Turn your dreams into reality, or they’ll remain just dreams.";
-const container = document.getElementById("textPhrase");
-let i = 0;
-
-function typeWriter() {
-    if (i < text.length) {
-        container.innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typeWriter, 100); 
-    }
-}
-
-typeWriter(); */
-
-
 
 // ! WORKS (page) -------------------------
 
