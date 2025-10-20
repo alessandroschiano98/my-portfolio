@@ -154,7 +154,7 @@
 /* ! Mobile (max-width: 768px) */
 @media (max-width: 768px) {
     .alessandroschianotitle {
-        font-size: clamp(32px, 10vw, 80px);
+        font-size: clamp(72px, 10vw, 80px);
     }
 
     .alessandroschianosubtitle {
