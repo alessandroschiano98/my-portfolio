@@ -25,6 +25,15 @@ lightbox.addEventListener('click', () => {
   lightbox.classList.remove('show');
 });
 
+// ! BURGER MENU
+const toggler = document.querySelector('.navbar-toggler');
+const navLinks = document.querySelector('.navbar-links');
+
+toggler.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+
 // ! BLOCCO TASTO DESTRO PER EVITARE SALVATAGGI 
 const imgs = document.querySelectorAll('.visualCard img, .lightbox img');
 

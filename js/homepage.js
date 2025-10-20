@@ -8,6 +8,15 @@ homepageClick.addEventListener("click", function (event) {
     window.location.href = "/html/homepage.html";
 });
 
+// ! BURGER MENU
+const toggler = document.querySelector('.navbar-toggler');
+const navLinks = document.querySelector('.navbar-links');
+
+toggler.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+
 // ! Transizione TITOLO 
 
 window.addEventListener("DOMContentLoaded", () => {
