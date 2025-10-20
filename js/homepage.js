@@ -28,10 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
       homepageCentre.classList.add("show");
     }
   
-    const toggler = document.querySelector('.navbar-toggler');
+    const hamburger = document.querySelector('.hamburger-checkbox');
     const navLinks = document.querySelector('.navbar-links');
-    if (toggler && navLinks) {
-      toggler.addEventListener('click', () => {
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
       });
     }
