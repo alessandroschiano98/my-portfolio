@@ -1,8 +1,8 @@
 /* ! BBH Sans Bogle */
 @font-face {
   font-family: "BBH Sans Bogle";
-  src: url("../fonts/BBH-Sans-Bogle.woff2") format("woff2"),
-       url("../fonts/BBH-Sans-Bogle.woff") format("woff");
+  src: url("/fonts/BBH-Sans-Bogle.woff2") format("woff2"),
+       url("/fonts/BBH-Sans-Bogle.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
