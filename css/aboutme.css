@@ -55,13 +55,14 @@
 /* ! INFO [ICONE NOME, CITTA' & DATA NASCITA] */
 
 .infoColumn {
+    font-family: 'Gyroscope Sans', sans-serif;
     position: absolute;
     right: 80px;
     top: 50%;
     transform: translateY(-50%);
     text-align: right;
     font-size: 18px;
-    color: #444;
+    color: #0550;
     line-height: 1.8;
 }
 
