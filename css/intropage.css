@@ -42,10 +42,18 @@ body {
         to { opacity: 1; }
       }
 
+
+ /* ! RESPONSIVE MOBILE (intro) */     
 @media (max-width: 768px){
+  .intro-image {
+    width: 65px;
+    height: 65px;
+    animation: rotateLogo 1s linear infinite;
+    
+  }
 
 .intro-text {
-  font-size: 15px;
+  font-size: 12px;
   opacity: 0;
   animation: fadeIn 2s ease forwards;
 }
