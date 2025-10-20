@@ -1,15 +1,17 @@
+/* ! BBH Sans Bogle */
 @font-face {
-     font-family: "BBH Sans Bogle", sans-serif;
-     font-weight: 300;
-     font-style: normal;
-   }
+  font-family: "BBH Sans Bogle";
+  src: url("../fonts/BBH-Sans-Bogle.woff2") format("woff2"),
+       url("../fonts/BBH-Sans-Bogle.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
 
-   
-   @font-face {
-    font-family: 'Gyroscope Sans', sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-   
-
-  
+/* ! Gyroscope Sans */
+@font-face {
+  font-family: "Gyroscope Sans";
+  src: url("../fonts/Gyroscope-Sans.woff2") format("woff2"),
+       url("../fonts/Gyroscope-Sans.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
