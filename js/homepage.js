@@ -5,7 +5,7 @@ const homepageClick = document.getElementById("homepage-click");
 
 homepageClick.addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.href = "homepage.html";
+    window.location.href = "/html/homepage.html";
 });
 
 // ! Transizione TITOLO 
@@ -21,7 +21,7 @@ const linkClick = document.getElementById("works-click");
 
 linkClick.addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.href = "works.html";
+    window.location.href = "/html/works.html";
 });
 
 // ! ABOUTME (page) -------------------------
@@ -31,7 +31,7 @@ const aboutmeClick = document.getElementById("aboutme-click");
 
 aboutmeClick.addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.href = "aboutme.html";
+    window.location.href = "/html/aboutme.html";
 });
 
 
