@@ -215,14 +215,6 @@
       display: none;
     }
 
-@import url("/css/font.css"); /* ! FONT IMPORTATO */ 
-.textPhrase {
-    display: flex;
-    justify-content: center;
-    font-size:  30px;
-    font-family: "BBH Sans Bogle", sans-serif;
-}
-
 .textPhrase::after {
     content: '|';
     animation: blink 1s infinite;

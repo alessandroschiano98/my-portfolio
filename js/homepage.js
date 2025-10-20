@@ -8,14 +8,6 @@ homepageClick.addEventListener("click", function (event) {
     window.location.href = "/html/homepage.html";
 });
 
-// ! BURGER MENU
-const toggler = document.querySelector('.navbar-toggler');
-const navLinks = document.querySelector('.navbar-links');
-
-toggler.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-
 
 // ! Transizione TITOLO 
 
@@ -48,6 +40,14 @@ aboutmeClick.addEventListener("click", function (event) {
   window.addEventListener("load", () => {
     document.body.classList.add("loaded");
   });
+
+  // ! BURGER MENU
+const toggler = document.querySelector('.navbar-toggler');
+const navLinks = document.querySelector('.navbar-links');
+
+toggler.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
 
 
 

@@ -93,12 +93,6 @@
 
 }
 
-@import url("/css/font.css"); /* ! FONT IMPORTATO */ 
-.skillClass {
-  font-family:sans-serif;
-}
-
-
 .info {
     border-collapse: collapse;
     font-family: "BBH Sans Bogle", sans-serif;
