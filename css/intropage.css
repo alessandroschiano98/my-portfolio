@@ -27,7 +27,7 @@ body {
 
   .intro-image {
     width: 85px;
-    lenght: 85px;
+    height: 85px;
     animation: rotateLogo 1s linear infinite;
     
   }

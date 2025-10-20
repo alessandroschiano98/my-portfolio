@@ -1,54 +1,43 @@
-// ! HOME
-
-// ! HOMEPAGE (page) -------------------------
-const homepageClick = document.getElementById("homepage-click");
-
-homepageClick.addEventListener("click", function (event) {
-    event.preventDefault();
-    window.location.href = "/html/homepage.html";
-});
-
-
-// ! Transizione TITOLO 
-
-window.addEventListener("DOMContentLoaded", () => {
-    document.querySelector(".homepagecentre").classList.add("show");
-});
-
-
-// ! WORKS (page) -------------------------
-
-const linkClick = document.getElementById("works-click");
-
-linkClick.addEventListener("click", function (event) {
-    event.preventDefault();
-    window.location.href = "/html/works.html";
-});
-
-// ! ABOUTME (page) -------------------------
-
-
-const aboutmeClick = document.getElementById("aboutme-click");
-
-aboutmeClick.addEventListener("click", function (event) {
-    event.preventDefault();
-    window.location.href = "/html/aboutme.html";
-});
-
-
-
-  window.addEventListener("load", () => {
-    document.body.classList.add("loaded");
+document.addEventListener("DOMContentLoaded", () => {
+    const homepageClick = document.getElementById("homepage-click");
+    if (homepageClick) {
+      homepageClick.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.location.href = "/html/homepage.html";
+      });
+    }
+  
+    const linkClick = document.getElementById("works-click");
+    if (linkClick) {
+      linkClick.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.location.href = "/html/works.html";
+      });
+    }
+  
+    const aboutmeClick = document.getElementById("aboutme-click");
+    if (aboutmeClick) {
+      aboutmeClick.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.location.href = "/html/aboutme.html";
+      });
+    }
+  
+    const homepageCentre = document.querySelector(".homepagecentre");
+    if (homepageCentre) {
+      homepageCentre.classList.add("show");
+    }
+  
+    const toggler = document.querySelector('.navbar-toggler');
+    const navLinks = document.querySelector('.navbar-links');
+    if (toggler && navLinks) {
+      toggler.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    }
+  
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
   });
-
-  // ! BURGER MENU
-const toggler = document.querySelector('.navbar-toggler');
-const navLinks = document.querySelector('.navbar-links');
-
-toggler.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-
-
-
-
+  

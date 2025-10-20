@@ -155,6 +155,8 @@
       font-size: clamp(32px, 10vw, 80px);
       white-space: normal;
     }
+
+
   
     .alessandroschianosubtitle {
       flex-direction: column;
