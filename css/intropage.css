@@ -43,7 +43,7 @@ body {
       }
 
 
- /* ! RESPONSIVE MOBILE (intro) */     
+  /* ! Responsive Mobile */    
 @media (max-width: 768px){
   .intro-image {
     width: 65px;

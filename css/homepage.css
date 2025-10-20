@@ -12,18 +12,6 @@
     transform: translateY(0);
 }
 
-/* ! OPZIONALE: ritardo per i sottotitoli (cascata) */
-.homepagecentre.show .webTitle {
-    transition-delay: 0.3s;
-}
-
-.homepagecentre.show .graphicTitle {
-    transition-delay: 0.6s;
-}
-
-.homepagecentre.show .visualTitle {
-    transition-delay: 0.9s;
-}
 
 /* ! Logo */
 
@@ -110,22 +98,26 @@
     }
 }
 
-/* ! Sezione principale */
+/* ! Contenitore principale */
 .homepagecentre {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    min-height: 100vh;      
     margin: 0;
-    padding: 200px;
+    padding: 0 20px;         
 }
 
 /* ! Titolo principale */
 .alessandroschianotitle {
     font-family: 'Gyroscope Sans', sans-serif;
-    font-size: clamp(40px, 8vw, 135px);
-    text-align: center;
+    font-size: clamp(40px, 8vw, 135px); 
     font-weight: bold;
-    white-space: normal;
-    margin: 0;
     line-height: 1.1;
-  }
+    margin: 0;
+}
   
   /* ! Sottotitolo */
   .alessandroschianosubtitle {
@@ -136,34 +128,42 @@
     gap: clamp(40px, 10vw, 180px); 
     font-size: clamp(20px, 4vw, 50px);
     font-weight: bold;
-    text-align: center;
     margin-top: 20px;
-    flex-wrap: nowrap; 
-  }
+    flex-wrap: nowrap;
+}
+
+/* ! Ritardo transizioni sottotitoli */
+.homepagecentre.show .webTitle {
+    transition-delay: 0.3s;
+}
+.homepagecentre.show .graphicTitle {
+    transition-delay: 0.6s;
+}
+.homepagecentre.show .visualTitle {
+    transition-delay: 0.9s;
+}
   
-  /* ! Reponsive Tablet(SOTTOTITOLO) */
-  @media (max-width: 1024px) {
+  /* ! Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
     .alessandroschianosubtitle {
-      gap: 60px;
-      flex-wrap: wrap; 
+        gap: 60px;
+        flex-wrap: wrap; 
     }
-  }
-  
-  /* ! Responsive Mobile */
-  @media (max-width: 768px) {
+}
+
+/* ! Mobile (max-width: 768px) */
+@media (max-width: 768px) {
     .alessandroschianotitle {
-      font-size: clamp(32px, 10vw, 80px);
-      white-space: normal;
+        font-size: clamp(32px, 10vw, 80px);
     }
 
-
-  
     .alessandroschianosubtitle {
-      flex-direction: column;
-      gap: 10px;
-      font-size: clamp(18px, 5vw, 30px);
+        flex-direction: column; 
+        gap: 10px;
+        font-size: clamp(18px, 5vw, 30px);
     }
-  }
+}
+
   
   
 
