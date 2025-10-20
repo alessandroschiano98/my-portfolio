@@ -55,9 +55,10 @@
     transform: translateY(-50%);
     text-align: right;
     font-size: 18px;
-    color: #0550;
+    color: black;
     line-height: 1.8;
 }
+
 
 /* ! Responsive: INFO */
 
@@ -82,10 +83,6 @@
     margin-top: 20px;
 }
 
-.boxSkill .info {
-    font-size: 10px;
-
-}
 
 .info {
     border-collapse: collapse;

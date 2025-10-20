@@ -161,6 +161,7 @@
         flex-direction: column; 
         gap: 10px;
         font-size: clamp(18px, 5vw, 30px);
+        display: none;
     }
 }
 
@@ -277,6 +278,7 @@
     .color-palette {
       display: none;
     }
+}
 
 .textPhrase::after {
     content: '|';
