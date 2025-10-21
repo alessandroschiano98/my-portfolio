@@ -110,6 +110,93 @@
     padding: 0 20px;         
 }
 
+/* ! Contenitore principale: due colonne */
+.boxClickHomepage {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    margin: 50px 32px;
+    flex-wrap: wrap; 
+    gap: 500px;
+  }
+
+  /* ! Right Arrow Icon */
+  .rightArrowIcon {
+    transform: rotate(-270deg);
+  }
+  
+  /* ! Box Contact Me */
+  .boxContactMe,
+  .boxLatestWorks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* ! Allinea Contact Me a sinistra e Recent Works a destra */
+  .boxContactMe {
+    align-items: flex-start;
+  }
+  
+  .boxLatestWorks {
+    align-items: flex-end;
+  }
+  
+  /* ! H3 con icona */
+  .contactMe,
+  .latestWorks {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Gyroscope Sans', sans-serif;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  /* ! Link */
+  .emailHomepage,
+  .worksLink {
+    font-family: 'Gyroscope Sans', sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    font-size: 18px;
+  }
+  
+  /* ! Responsive tablet */
+  @media (max-width: 1024px) {
+    .boxClickHomepage {
+      margin: 40px 24px;
+    }
+    .contactMe,
+    .latestWorks {
+      font-size: 16px;
+    }
+  }
+  
+  /* ! Responsive mobile */
+  @media (max-width: 768px) {
+    .boxClickHomepage {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .boxContactMe,
+    .boxLatestWorks {
+      align-items: center; 
+    }
+  
+    .contactMe,
+    .latestWorks {
+      font-size: 15px;
+    }
+  }
+  
+
+
+
 /* ! Titolo principale */
 .alessandroschianotitle {
     font-family: 'Gyroscope Sans', sans-serif;
