@@ -75,7 +75,6 @@
 }
 
 /* ! Responsive: menu mobile */
-
 @media (max-width: 768px) {
     .navbar-toggler {
         display: block;
@@ -149,6 +148,16 @@
     flex-wrap: wrap; 
     gap: 500px;
   }
+
+ /* ! Responsive Tablet & Phone */ 
+  @media (max-width: 1024px){
+  .boxClickHomepage {
+    flex-wrap: wrap; 
+    gap: 50px;
+
+  }
+
+}
 
   /* ! Right Arrow Icon */
   .rightArrowIcon {
