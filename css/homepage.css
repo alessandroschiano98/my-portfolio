@@ -283,8 +283,6 @@
     }
 }
 
-
-
 /* ! Burger Links  */ 
 
 .hamburger {
@@ -408,6 +406,5 @@
     0%, 50%, 100% { opacity: 5; }
     25%, 75% { opacity: 0; }
 }
-
 
 
