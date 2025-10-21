@@ -110,6 +110,36 @@
     padding: 0 20px;         
 }
 
+  /* ! Responsive tablet */
+  @media (max-width: 1064px){
+    .homepagecentre {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;     
+        text-align: center;
+        min-height: 80vh;      
+        margin: 0;
+        padding: 0 10px;
+        
+    }
+    }
+
+  /* ! Responsive mobile */
+  @media (max-width: 768px){
+.homepagecentre {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    min-height: 40vh;      
+    margin: 0;
+    
+}
+}
+
+
 /* ! Contenitore principale: due colonne */
 .boxClickHomepage {
     display: flex;
@@ -181,6 +211,7 @@
       flex-direction: column;
       align-items: center;
       gap: 30px;
+      padding-bottom: 120px;
     }
   
     .boxContactMe,
