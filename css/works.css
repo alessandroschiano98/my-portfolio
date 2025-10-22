@@ -161,17 +161,16 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease;
     font-size: 14px;
+    pointer-events: none;
   }
 
   
   .visualCard:hover img {
-    transform: translateY(-4px) scale(1.55);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transform: none; 
+    transition: none; 
+    cursor: pointer;
   }
   
-  .visualCard:hover span {
-    opacity: 1;
-  }
   
   @media (max-width: 768px) {
     .visualCard img {
@@ -194,14 +193,7 @@ body {
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
-  
-  .project-video {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    border-radius: 16px;
-  }
+
   
   .project-info {
     position: absolute;
@@ -226,31 +218,38 @@ body {
     pointer-events: auto;
   }
   
-
-  .lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    z-index: 1000;
-  }
+/* ! Lightbox overlay */
+#lightbox {
+  position: fixed;        
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+  overflow: auto;           
+}
   
-  .lightbox img {
-    max-width: 90%;
-    max-height: 90%;
+  /* ! Immagine dentro la lightbox */
+  #lightbox img {
+    max-width: 90vw;    
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    pointer-events: none;
+    
   }
   
-  .lightbox.show {
+  /* ! Lightbox visibile */
+  #lightbox.show {
     opacity: 1;
     pointer-events: auto;
   }
