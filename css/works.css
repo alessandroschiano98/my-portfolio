@@ -139,6 +139,8 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .visualCard img {
@@ -156,20 +158,17 @@ body {
     left: 0;
     width: 100%;
     text-align: center;
-    color: #fff;
     background: rgba(0,0,0,0.5);
-    padding: 8px 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    color: #fff;
+    padding: 8px;
     font-size: 14px;
-    pointer-events: none;
   }
+  
 
   
-  .visualCard:hover img {
-    transform: none; 
-    transition: none; 
-    cursor: pointer;
+  .visualCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   }
   
   
@@ -239,14 +238,9 @@ body {
   
   /* ! Immagine dentro la lightbox */
   #lightbox img {
-    max-width: 90vw;    
+    max-width: 90vw;
     max-height: 90vh;
-    width: auto;
-    height: auto;
     object-fit: contain;
-    border-radius: 12px;
-    pointer-events: none;
-    
   }
   
   /* ! Lightbox visibile */
@@ -254,6 +248,35 @@ body {
     opacity: 1;
     pointer-events: auto;
   }
+
   
+  /* ! Pulsanti di navigazione lightbox */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 10000;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#prevBtn {
+  left: 40px;
+}
+
+#nextBtn {
+  right: 40px;
+}
+
   
 
