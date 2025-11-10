@@ -46,7 +46,7 @@ body {
   font-family: 'Gyroscope Sans', sans-serif;
   font-size: 32px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .projectsGrid {
@@ -129,98 +129,55 @@ body {
 }
 
 .visualGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
-  }
-  
-  .visualCard {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.visualCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.visualCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.visualCard span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.visualCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
   .visualCard img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
+    height: 150px;
   }
-  
-  .visualCard span {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    background: rgba(0,0,0,0.5);
-    color: #fff;
-    padding: 8px;
-    font-size: 14px;
-  }
-  
+}
 
-  
-  .visualCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  }
-  
-  
-  @media (max-width: 768px) {
-    .visualCard img {
-      height: 150px;
-    }
-  }
-  
-  
-  
-
-.project {
-    position: relative;
-    overflow: hidden;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-  }
-  
-  .project:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
-
-  
-  .project-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 12px 16px;
-    font-family: "BBH Sans Bogle", sans-serif;
-    text-align: left;
-  }
-
-
-  /* ! AL CLICK DELLE VISUALS WORKS */
-  
-  /* ! PER NON FAR SALVARE IMG */
-  .lightbox img,
-  .visualCard img {
-    user-select: none;       
-    -webkit-user-drag: none; 
-    pointer-events: auto;
-  }
-  
-/* ! Lightbox overlay */
-#lightbox {
-  position: fixed;        
+/* ! VISUAL WORKS LIGHTBOX */
+#visual-lightbox {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -233,50 +190,38 @@ body {
   pointer-events: none;
   transition: opacity 0.3s ease;
   z-index: 9999;
-  overflow: auto;           
 }
-  
-  /* ! Immagine dentro la lightbox */
-  #lightbox img {
-    max-width: 90vw;
-    max-height: 90vh;
-    object-fit: contain;
-  }
-  
-  /* ! Lightbox visibile */
-  #lightbox.show {
-    opacity: 1;
-    pointer-events: auto;
-  }
 
-  
-  /* ! Pulsanti di navigazione lightbox */
-.nav-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 40px;
-  color: white;
-  background: rgba(0, 0, 0, 0.4);
-  border: none;
-  padding: 10px 16px;
-  border-radius: 50%;
+#visual-lightbox.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#visual-lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+/* ! BRANDING OVEERLAY */
+.branding-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
   cursor: pointer;
-  transition: background 0.3s ease;
-  z-index: 10000;
 }
 
-.nav-btn:hover {
-  background: rgba(0, 0, 0, 0.7);
+.branding-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
 }
 
-#prevBtn {
-  left: 40px;
-}
-
-#nextBtn {
-  right: 40px;
-}
-
-  
 
