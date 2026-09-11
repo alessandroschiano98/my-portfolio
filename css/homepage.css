@@ -1,4 +1,4 @@
-* /* ! ANIMAZIONE FADE-IN PER HOMEPAGECENTRE */
+/* ! ANIMAZIONE FADE-IN PER HOMEPAGECENTRE */
 .homepagecentre h1,
 .homepagecentre h3 {
     opacity: 0;
@@ -12,48 +12,41 @@
     transform: translateY(0);
 }
 
+/* ===================================================
+   NAVBAR GENERALE (BLINDATA CONTRO BOOTSTRAP)
+   =================================================== */
+.nav-homepage .navbar {
+    width: 100%;
+    background-color: #e9e8e8 !important;
+    padding: 10px 0 !important;
+    position: relative;
+    z-index: 9999;
+}
 
-/* ! Logo */
+/* Il container non deve MAI andare a capo su mobile */
+.nav-homepage .navbar .container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    position: relative;
+}
 
+/* Logo */
 .logo {
     width: 100px;
     height: auto;
     object-fit: contain;
-
+    display: block;
 }
 
-/* ! Contenitore navbar */
-.nav-homepage .navbar {
-    width: 100%;
-    background-color: #e9e8e8;
+/* Lista link Desktop */
+.navbar-links {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 5px 32px;
-    box-sizing: border-box;
 }
 
-/* ! Brand / Logo */
-.navbar-title {
-    font-family: 'Gyroscope Sans', sans-serif;
-    color: #000000;
-    margin: 0;
-    font-size: 28px;
-    white-space: nowrap;
-    /* ! Evita che il testo vada a capo */
-}
-
-/* ! Bottone toggler per mobile */
-.navbar-toggler {
-    display: none;
-    background: none;
-    border: none;
-    color: #000000;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* ! Lista link navbar */
 .nav-list {
     list-style: none;
     display: flex;
@@ -67,37 +60,120 @@
     text-decoration: none;
     color: #000000;
     font-weight: 500;
-    transition: color 0.1s;
+    transition: opacity 0.2s ease;
 }
 
 .nav-list li a:hover {
-    color: #ffffff;
+    opacity: 0.6;
 }
 
-/* ! Responsive: menu mobile */
+/* Brand / Logo Title se presente */
+.navbar-title {
+    font-family: 'Gyroscope Sans', sans-serif;
+    color: #000000;
+    margin: 0;
+    font-size: 28px;
+    white-space: nowrap;
+}
+
+/* ===================================================
+   PULSANTE HAMBURGER & ICONA X
+   =================================================== */
+.hamburger {
+    cursor: pointer;
+    display: none; /* Nascosto su desktop */
+    margin: 0 0 0 auto !important; /* Blocca tassativamente l'icona a destra */
+    z-index: 10005;
+}
+
+.hamburger input {
+    display: none;
+}
+
+.hamburger svg {
+    height: 2.6em;
+    display: block;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+    fill: none;
+    stroke: #000000;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition:
+      stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+    transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
+/* ===================================================
+   RESPONSIVE MOBILE (schermi <= 768px)
+   =================================================== */
 @media (max-width: 768px) {
-    .navbar-toggler {
-        display: block;
+    .hamburger {
+        display: flex !important;
+        margin-left: auto !important;
     }
 
+    /* Di base nascosto per non spostare l'hamburger */
     .navbar-links {
-        display: none;
-        flex-direction: column;
-        gap: 16px;
-        margin-top: 16px;
+        display: none !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        background-color: #e9e8e8 !important;
+        padding: 24px 0 30px 0 !important;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        box-sizing: border-box;
+        z-index: 10000;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
+    /* Visibile quando attivato da JS */
     .navbar-links.active {
-        display: flex;
+        display: flex !important;
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .nav-list {
-        flex-direction: column;
-        gap: 16px;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-list li a {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
     }
 }
 
-/* ! Contenitore principale */
+/* ===================================================
+   CONTENITORE PRINCIPALE
+   =================================================== */
 .homepagecentre {
     display: flex;
     flex-direction: column; 
@@ -109,37 +185,25 @@
     padding: 0 20px;         
 }
 
-  /* ! Responsive tablet */
-  @media (max-width: 1064px){
+/* Responsive tablet */
+@media (max-width: 1064px){
     .homepagecentre {
-        display: flex;
-        flex-direction: column; 
-        justify-content: center; 
-        align-items: center;     
-        text-align: center;
         min-height: 80vh;      
-        margin: 0;
         padding: 0 10px;
-        
     }
-    }
-
-  /* ! Responsive mobile */
-  @media (max-width: 768px){
-.homepagecentre {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center;     
-    text-align: center;
-    min-height: 40vh;      
-    margin: 0;
-    
-}
 }
 
+/* Responsive mobile */
+@media (max-width: 768px){
+    .homepagecentre {
+        min-height: 40vh;      
+        margin: 0;
+    }
+}
 
-/* ! Contenitore principale: due colonne */
+/* ===================================================
+   DUE COLONNE: CONTACT ME & LATEST WORKS
+   =================================================== */
 .boxClickHomepage {
     display: flex;
     justify-content: space-between; 
@@ -147,43 +211,37 @@
     margin: 50px 32px;
     flex-wrap: wrap; 
     gap: 500px;
-  }
-
- /* ! Responsive Tablet & Phone */ 
-  @media (max-width: 1024px){
-  .boxClickHomepage {
-    flex-wrap: wrap; 
-    gap: 50px;
-
-  }
-
 }
 
-  /* ! Right Arrow Icon */
-  .rightArrowIcon {
+@media (max-width: 1024px){
+    .boxClickHomepage {
+        flex-wrap: wrap; 
+        gap: 50px;
+        margin: 40px 24px;
+    }
+}
+
+.rightArrowIcon {
     transform: rotate(-270deg);
-  }
-  
-  /* ! Box Contact Me */
-  .boxContactMe,
-  .boxLatestWorks {
+}
+
+.boxContactMe,
+.boxLatestWorks {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-  
-  /* ! Allinea Contact Me a sinistra e Recent Works a destra */
-  .boxContactMe {
+}
+
+.boxContactMe {
     align-items: flex-start;
-  }
-  
-  .boxLatestWorks {
+}
+
+.boxLatestWorks {
     align-items: flex-end;
-  }
-  
-  /* ! H3 con icona */
-  .contactMe,
-  .latestWorks {
+}
+
+.contactMe,
+.latestWorks {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -191,53 +249,46 @@
     font-size: clamp(16px, 2vw, 20px);
     font-weight: 400;
     margin: 0;
-  }
-  
-  /* ! Link */
-  .emailHomepage,
-  .worksLink {
+}
+
+.emailHomepage,
+.worksLink {
     font-family: 'Gyroscope Sans', sans-serif;
     text-decoration: none;
     color: #000;
     font-weight: 800;
     font-size: 18px;
-  }
-  
-  /* ! Responsive tablet */
-  @media (max-width: 1024px) {
-    .boxClickHomepage {
-      margin: 40px 24px;
-    }
+}
+
+@media (max-width: 1024px) {
     .contactMe,
     .latestWorks {
-      font-size: 16px;
+        font-size: 16px;
     }
-  }
-  
-  /* ! Responsive mobile */
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .boxClickHomepage {
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
-      padding-bottom: 120px;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-bottom: 120px;
     }
-  
+
     .boxContactMe,
     .boxLatestWorks {
-      align-items: center; 
+        align-items: center; 
     }
-  
+
     .contactMe,
     .latestWorks {
-      font-size: 15px;
+        font-size: 15px;
     }
-  }
-  
+}
 
-
-
-/* ! Titolo principale */
+/* ===================================================
+   TITOLO PRINCIPALE & SOTTOTITOLO
+   =================================================== */
 .alessandroschianotitle {
     font-family: 'Gyroscope Sans', sans-serif;
     font-size: clamp(40px, 8vw, 135px); 
@@ -245,9 +296,8 @@
     line-height: 1.1;
     margin: 0;
 }
-  
-  /* ! Sottotitolo */
-  .alessandroschianosubtitle {
+
+.alessandroschianosubtitle {
     font-family: 'Gyroscope Sans', sans-serif;
     display: flex;
     justify-content: center;
@@ -259,15 +309,13 @@
     flex-wrap: nowrap;
 }
 
-/* ! Ritardo transizioni sottotitoli */
 .homepagecentre.show .graphicTitle {
     transition-delay: 0.3s;
 }
 .homepagecentre.show .visualTitle {
     transition-delay: 0.6s;
 }
-  
-  /* ! Tablet (max-width: 1024px) */
+
 @media (max-width: 1024px) {
     .alessandroschianosubtitle {
         gap: 60px;
@@ -275,7 +323,6 @@
     }
 }
 
-/* ! Mobile (max-width: 768px) */
 @media (max-width: 768px) {
     .alessandroschianotitle {
         font-size: clamp(72px, 10vw, 80px);
@@ -289,70 +336,9 @@
     }
 }
 
-/* ! Burger Links  */ 
-
-.hamburger {
-    cursor: pointer;
-  }
-  
-  .hamburger input {
-    display: none;
-  }
-  
-  .hamburger svg {
-    /* The size of the SVG defines the overall size */
-    height: 3em;
-    /* Define the transition for transforming the SVG */
-    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .line {
-    fill: none;
-    stroke: black;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 3;
-    /* Define the transition for transforming the Stroke */
-    transition:
-      stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .line-top-bottom {
-    stroke-dasharray: 12 63;
-  }
-  
-  .hamburger input:checked + svg {
-    transform: rotate(-45deg);
-  }
-  
-  .hamburger input:checked + svg .line-top-bottom {
-    stroke-dasharray: 20 300;
-    stroke-dashoffset: -32.42;
-  }
-  
- /*! Menu responsive */
-.navbar-links {
-  display: none;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 16px;
-}
-
-.navbar-links.active {
-  display: flex;
-}
-
-/* ! Mostra hamburger solo su mobile */
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-}
-  
-  
-
-/* ! Sezione palette colori (3 cubi in basso a destra) */
+/* ===================================================
+   PALETTE COLORI (Cubi)
+   =================================================== */
 .color-palette {
     position: fixed;
     bottom: 32px;
@@ -363,7 +349,6 @@
     z-index: 1000;
 }
 
-/* ! Singolo cubo */
 .cube {
     width: 40px;
     height: 40px;
@@ -372,33 +357,19 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* ! Effetto hover */
 .cube:hover {
     transform: translateY(-4px) scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-/* ! Colori palette personalizzabili */
-.cube1 {
-    background-color: #000000;
-}
+.cube1 { background-color: #000000; }
+.cube2 { background-color: #e9e8e8; }
+.cube3 { background-color: #555555; }
+.cube4 { background-color: #ffffff; }
 
-.cube2 {
-    background-color: #e9e8e8;
-}
-
-.cube3 {
-    background-color: #555555;
-}
-
-.cube4 {
-    background-color: #ffffff;
-}
-
-/* ! Cubi Responsive */
 @media (max-width: 768px) {
     .color-palette {
-      display: none;
+        display: none;
     }
 }
 
@@ -409,8 +380,6 @@
 }
 
 @keyframes blink {
-    0%, 50%, 100% { opacity: 5; }
+    0%, 50%, 100% { opacity: 1; }
     25%, 75% { opacity: 0; }
 }
-
-
