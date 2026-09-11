@@ -260,14 +260,11 @@
 }
 
 /* ! Ritardo transizioni sottotitoli */
-.homepagecentre.show .webTitle {
+.homepagecentre.show .graphicTitle {
     transition-delay: 0.3s;
 }
-.homepagecentre.show .graphicTitle {
-    transition-delay: 0.6s;
-}
 .homepagecentre.show .visualTitle {
-    transition-delay: 0.9s;
+    transition-delay: 0.6s;
 }
   
   /* ! Tablet (max-width: 1024px) */

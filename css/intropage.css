@@ -1,65 +1,88 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-  }
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 100dvh gestisce correttamente la barra degli indirizzi su iOS e Android */
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Gyroscope Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
 
-  .intro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Distanza dinamica tra logo e testo */
+  gap: clamp(14px, 3vh, 26px);
+  width: 100%;
+  max-width: 90vw;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
 
-  @keyframes rotateLogo {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+/* Logo con dimensione dinamica e rotazione fluida */
+.intro-image {
+  /* Si adatta tra 50px su schermi minuscoli e 80px su desktop */
+  width: clamp(50px, 12vw, 80px);
+  height: clamp(50px, 12vw, 80px);
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08));
+  animation: 
+    scaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards,
+    rotateLogo 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
 
-  .intro-image {
-    width: 85px;
-    height: 85px;
-    animation: rotateLogo 1s linear infinite;
-    
-  }
-
- .intro-text {
-        font-size: 25px;
-        opacity: 0;
-        animation: fadeIn 2s ease forwards;
-      }
-  
-      @keyframes fadeIn {
-        to { opacity: 1; }
-      }
-
-
-  /* ! Responsive Mobile */    
-@media (max-width: 768px){
-  .intro-image {
-    width: 65px;
-    height: 65px;
-    animation: rotateLogo 1s linear infinite;
-    
-  }
-
+/* Scritta fluida: scala automaticamente senza sbordare */
 .intro-text {
-  font-size: 12px;
+  color: #000000;
+  font-family: 'Gyroscope Sans', sans-serif;
+  /* Scala fluidamente da 13px su mobile a 18px su desktop */
+  font-size: clamp(13px, 3.5vw, 18px);
+  font-weight: 500;
+  /* Spaziatura ridotta su schermi stretti per evitare rotture di riga sgraziate */
+  letter-spacing: clamp(0.10em, 1.2vw, 0.22em);
+  text-transform: uppercase;
+  margin: 0;
+  max-width: 100%;
+  word-break: break-word;
   opacity: 0;
-  animation: fadeIn 2s ease forwards;
+  transform: translateY(10px);
+  animation: textSlideUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
 }
 
-@keyframes fadeIn {
-  to { opacity: 1; }
+/* Animazioni */
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes textSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
