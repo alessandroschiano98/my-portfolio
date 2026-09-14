@@ -202,6 +202,19 @@ body {
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.09);
 }
 
+/* Case study principali (Tokko / Exxxplicit): leggero accento per farle risaltare */
+.projectCard.highlight {
+  border-color: #000000;
+}
+
+.projectCard.highlight::before {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #000000;
+}
+
 .projectImageWrap {
   width: 100%;
   overflow: hidden;

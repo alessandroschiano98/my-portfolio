@@ -1,8 +1,31 @@
 const translations = {
     en: {
+      // Navigation
       nav_home: "Homepage",
       nav_works: "Works",
       nav_about: "About Me",
+  
+      // Homepage
+      home_status: "Available for branding & visual projects",
+      home_tagline: "Graphic & Visual Designer",
+      home_intro: "Shaping bold visual identities, streetwear culture, textile print files, and digital aesthetics. Focused on singular creative execution and clean brand narratives.",
+      home_cta_works: "Explore Selected Works",
+      home_cta_about: "Read My Story",
+      home_pillars_label: "Core Disciplines:",
+      home_pillar_1: "Streetwear & Merchandising",
+      home_pillar_2: "Brand Identity Systems",
+      home_pillar_3: "Music Cover Artworks",
+      home_pillar_4: "UI & Frontend Code",
+      home_selected_title: "Featured Projects",
+      home_card_1_cat: "Brand Identity & Apparel",
+      home_card_1_desc: "A raw streetwear brand identity mixing extreme emotions and sexuality into a cult aesthetic with recurring sold-out drops.",
+      home_card_2_cat: "Visual Identity & Packaging",
+      home_card_2_desc: "Contemporary gourmet identity with strong typographic harmony, custom packaging, and balanced modern layouts.",
+      home_contact_heading: "Let's build something authentic.",
+      home_contact_sub: "Have an upcoming project, clothing drop, or visual identity to craft?",
+      home_contact_btn: "Get in Touch",
+  
+      // About Me
       about_status: "Open to new opportunities",
       about_role: "Born <b>Graphic Designer</b> and evolved into <b>Visual Designer</b>.",
       about_tag_location: "Naples, Italy",
@@ -38,7 +61,7 @@ const translations = {
       global_exp_label: "Global Experience:",
       global_exp_text: "Sharpened through a 4-month Erasmus program in Lithuania and constant international travel, expanding cultural adaptability and communication.",
       
-      // Hobbies & Lifestyle
+      // Hobbies
       hobby_fashion_title: "Fashion & Tailoring",
       hobby_fashion_desc: "A genuine love for dressing well, streetwear aesthetics, textures, and curated visual presence.",
       hobby_cinema_title: "Hardcore Cinephile",
@@ -70,10 +93,34 @@ const translations = {
       journey_05_title: "Retail Ethics, Visual Evolution & Ready for What's Next",
       journey_05_text: "To remain fully independent, I spent the last 5 years working in clothing retail. This experience grounded me with a solid professional work ethic, interpersonal awareness, and business empathy. Throughout this time, I independently handled store graphics and social content, pushing for modern visual layouts over outdated promotional conventions. Now, equipped with design mastery, branding execution, front-end development curiosity, and real-world discipline, I am ready to bring dedication and value to a forward-thinking creative studio or agency."
     },
+  
     it: {
+      // Navigation
       nav_home: "Homepage",
       nav_works: "Progetti",
       nav_about: "Chi Sono",
+  
+      // Homepage
+      home_status: "Disponibile per progetti di branding e visual design",
+      home_tagline: "Graphic & Visual Designer",
+      home_intro: "Creo identità visive incisive, cultura streetwear, file di stampa tessile ed estetica digitale contemporanea. Focus sulla precisione esecutiva e narrazioni visive pulite.",
+      home_cta_works: "Scopri i Progetti",
+      home_cta_about: "La Mia Storia",
+      home_pillars_label: "Discipline Chiave:",
+      home_pillar_1: "Streetwear & Merchandising",
+      home_pillar_2: "Sistemi di Brand Identity",
+      home_pillar_3: "Cover Art Musicali",
+      home_pillar_4: "UI & Sviluppo Frontend",
+      home_selected_title: "Progetti in Evidenza",
+      home_card_1_cat: "Brand Identity & Moda",
+      home_card_1_desc: "Un brand streetwear viscerale che ha unito passione estrema e sensualità in un'estetica cult con drop sempre sold-out.",
+      home_card_2_cat: "Identità Visiva & Packaging",
+      home_card_2_desc: "Identità gourmet contemporanea con forte equilibrio tipografico, packaging su misura e impaginazione minimalista.",
+      home_contact_heading: "Costruiamo qualcosa di autentico.",
+      home_contact_sub: "Hai un progetto, un lancio abbigliamento o un'identità visiva da sviluppare?",
+      home_contact_btn: "Contattami",
+  
+      // About Me
       about_status: "Disponibile per nuove opportunità",
       about_role: "Nato <b>Graphic Designer</b> ed evoluto in <b>Visual Designer</b>.",
       about_tag_location: "Napoli, Italia",
@@ -109,7 +156,7 @@ const translations = {
       global_exp_label: "Esperienza Globale:",
       global_exp_text: "Perfezionata durante 4 mesi di Erasmus in Lituania e viaggi internazionali continui, ampliando apertura culturale e capacità comunicative.",
       
-      // Hobbies & Lifestyle
+      // Hobbies
       hobby_fashion_title: "Moda & Cura del Look",
       hobby_fashion_desc: "Passione autentica per il vestire bene, la cultura streetwear, la qualità dei tessuti e l'estetica personale.",
       hobby_cinema_title: "Cinefilo Estremo",
