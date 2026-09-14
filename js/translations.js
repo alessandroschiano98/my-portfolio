@@ -74,24 +74,31 @@ const translations = {
       dev_frontend: "Frontend Development",
       dev_backend: "Backend Foundations",
       tools_workflow_label: "Tools & Workflow:",
-      journey_tag: "The Background",
+      
+      // Journey Timeline (Refined English)
+      journey_tag: "Background",
       journey_title: "My Journey",
-      journey_sub: "How curiosity, self-taught passion, international mobility, streetwear culture, and retail experience shaped my creative mindset.",
-      journey_01_phase: "01 / The Realization",
-      journey_01_title: "From Culinary School to Digital Canvases",
-      journey_01_text: "My initial path was aimed toward becoming a professional chef, leading me to enroll at the IPSAR Cavalcanti hotel institute in San Giovanni a Teduccio. During the first years curiosity ran high, but by the third year, real internship stages revealed that cooking was merely a personal hobby. Meanwhile, an innate passion had already taken root: since the age of 10, I had been experimenting with Photoshop across gaming communities, discovering a spontaneous creative instinct that felt far more natural.",
-      journey_02_phase: "02 / The International Leap",
-      journey_02_title: "Erasmus in Lithuania & Global Perspective",
-      journey_02_text: "Immediately after graduating, I challenged myself with a 4-month Erasmus experience in Lithuania. Living abroad fully immersed in an international context pushed my adaptability and gave a major boost to my English language skills. This journey ignited an enduring love for traveling, exploring foreign cultures, and expanding my visual horizons—a continuous learning process that keeps improving my spoken and written English (B1–B2) to this day.",
-      journey_03_phase: "03 / First Steps & The Music Scene",
-      journey_03_title: "Portraits, Self-Promotion & Cover Art",
-      journey_03_text: "I launched an Instagram page showcasing portrait designs and creative artworks, often working for free to refine my skills and build momentum. As visual quality evolved, paid commissions arrived: I began designing cover art and graphics for artists in the music scene—both independent and recognized musicians such as Laioung and Blair. Recognizing the need to master technical foundations alongside pure instinct, I attended an advanced advertising graphics course to formalize my design workflow.",
-      journey_04_phase: "04 / The Streetwear Venture",
-      journey_04_title: "Founding Exxxplicit & Generating a Movement",
-      journey_04_text: "Driven by a passion for fashion and print design, I co-founded the streetwear label <b>Exxxplicit</b> with two partners. Here I learned prepress production, textile print files, packaging, and digital marketing. I built a visceral concept linking extreme sentimentality, sex, and love in a unified aesthetic. The drops consistently hit sold-out status because audiences connected with the narrative. Although the project eventually ended as partner priorities diverged, it provided invaluable real-world branding and art direction experience.",
-      journey_05_phase: "05 / Growth & The Next Step",
-      journey_05_title: "Retail Ethics, Visual Evolution & Ready for What's Next",
-      journey_05_text: "To remain fully independent, I spent the last 5 years working in clothing retail. This experience grounded me with a solid professional work ethic, interpersonal awareness, and business empathy. Throughout this time, I independently handled store graphics and social content, pushing for modern visual layouts over outdated promotional conventions. Now, equipped with design mastery, branding execution, front-end development curiosity, and real-world discipline, I am ready to bring dedication and value to a forward-thinking creative studio or agency."
+      journey_sub: "From early self-taught experiments to streetwear brand architecture and commercial discipline.",
+  
+      journey_01_phase: "01 / The Turning Point",
+      journey_01_title: "From Culinary Aspirations to Digital Craft",
+      journey_01_text: "My educational path originally pointed toward professional cooking, leading me to enroll at the IPSAR Cavalcanti hotel school in San Giovanni a Teduccio. While my early years were driven by genuine enthusiasm, hands-on kitchen internships during my third year made me realize that culinary art was only ever meant to be a personal hobby. Meanwhile, an innate creative vocation had long taken root: since age ten, I was immersed in online gaming communities designing visual assets with Photoshop. What began as playtime quickly unveiled a deep, instinctive talent for visual balance and composition.",
+  
+      journey_02_phase: "02 / Broadening Horizons",
+      journey_02_title: "Erasmus in Lithuania & Cultural Independence",
+      journey_02_text: "Right after graduation, I embarked on a four-month Erasmus journey in Lithuania. Living entirely on my own in an international ecosystem pushed me out of my comfort zone, sharpening my self-reliance and accelerating my English fluency. This experience cemented a lasting passion for global travel and diverse aesthetics—an ongoing journey that continually sharpens my perspective, cultural empathy, and English proficiency (B1/B2) to this day.",
+  
+      journey_03_phase: "03 / Emerging Portfolio",
+      journey_03_title: "Visual Experimentation & The Music Industry",
+      journey_03_text: "Committed to turning my passion into a profession, I built a digital presence on Instagram. I dedicated months to creating portrait art and complimentary designs, focusing purely on skill mastery and momentum. As the visual standard matured, commission requests followed: I began designing cover art and commercial assets for artists across the music scene, collaborating with established names such as Laioung and Blair. Aware of the gap between raw intuition and production rigor, I subsequently completed a specialized advanced course in advertising graphics.",
+  
+      journey_04_phase: "04 / The Brand Venture",
+      journey_04_title: "Co-Founding Exxxplicit & Generating Cultural Resonance",
+      journey_04_text: "Fascinated by fashion culture, I co-founded the streetwear label <b>Exxxplicit</b> alongside two partners. Taking full ownership of art direction, I managed everything from textile print files to packaging and marketing campaigns. I crafted a bold concept bridging extreme emotional intimacy, sexuality, and sentimentality—a distinctive narrative that resonated with our audience, sparked spontaneous social sharing, and consistently produced sold-out collections. While the partnership eventually ran its course due to misaligned long-term visions, the venture provided rigorous, trial-by-fire experience in real-world brand building.",
+  
+      journey_05_phase: "05 / Commercial Discipline",
+      journey_05_title: "Retail Ethics & Readier Than Ever",
+      journey_05_text: "To support my independence and remain self-sufficient, I dedicated five years to clothing retail. This chapter instilled invaluable lessons in professional work ethic, customer psychology, and operational resilience. In parallel, I proactively oversaw the store’s social presence and graphic materials, introducing contemporary, elevated design standards against conventional local retail norms. Today, backed by real-world discipline, verified branding expertise, front-end development foundations, and an insatiable drive for excellence, I am actively seeking a dedicated creative role within a forward-thinking design studio or agency."
     },
   
     it: {
@@ -169,24 +176,31 @@ const translations = {
       dev_frontend: "Sviluppo Frontend",
       dev_backend: "Basi di Backend",
       tools_workflow_label: "Strumenti & Workflow:",
-      journey_tag: "La Mia Storia",
+      
+      // Journey Timeline (Italiano Corretto ed Editoriale)
+      journey_tag: "Background",
       journey_title: "Il Mio Percorso",
-      journey_sub: "Come la curiosità, la passione da autodidatta, la mobilità estera, lo streetwear e il retail hanno formato la mia identità visiva.",
+      journey_sub: "Dalle prime sperimentazioni da autodidatta alla creazione di un brand streetwear, fino alla maturità commerciale.",
+  
       journey_01_phase: "01 / La Consapevolezza",
-      journey_01_title: "Dall'Istituto Alberghiero alla Grafica Digitale",
-      journey_01_text: "La mia scelta iniziale era diventare un cuoco professionista, iscrivendomi all'IPSAR Cavalcanti di San Giovanni a Teduccio. All'inizio c'era tanta curiosità, ma al terzo anno i primi stage sul campo mi hanno fatto capire che la cucina era solo un hobby. Nel frattempo, già a 10 anni usavo Photoshop nelle community di gaming, scoprendo un talento creativo naturale che andava ben oltre la semplice passione occasionale.",
-      journey_02_phase: "02 / Il Salto Internazionale",
-      journey_02_title: "Erasmus in Lituania & Prospettiva Globale",
-      journey_02_text: "Subito dopo il diploma ho fatto un Erasmus di 4 mesi in Lituania. Vivere all'estero in un contesto multiculturale ha rafforzato il mio spirito di adattamento e potenziato il mio inglese. Da lì è nato l'amore per i viaggi e le nuove culture, un percorso che ancora oggi arricchisce la mia visione e migliora costantemente il mio inglese parlato e scritto (livello B1–B2).",
-      journey_03_phase: "03 / I Primi Passi & La Scena Musicale",
+      journey_01_title: "Dall'Istituto Alberghiero alla Vocazione Digitale",
+      journey_01_text: "La mia scelta iniziale era orientata all'alta ristorazione, motivo per cui ho intrapreso gli studi presso l'IPSAR Cavalcanti di San Giovanni a Teduccio. Nei primi anni l'entusiasmo era alto, ma durante le prime esperienze di stage al terzo anno ho realizzato che la cucina apparteneva alla dimensione degli hobby personali. Parallelamente, un'attitudine autentica stava già emergendo: fin dall'età di dieci anni utilizzavo Photoshop per ideare grafiche all'interno delle community di gaming. Quello che era nato come gioco si è presto rivelato un talento spontaneo per la composizione e l'estetica visiva.",
+  
+      journey_02_phase: "02 / Apertura Internazionale",
+      journey_02_title: "Erasmus in Lituania & Indipendenza Culturale",
+      journey_02_text: "Subito dopo il diploma ho scelto di mettermi alla prova con un programma Erasmus di quattro mesi in Lituania. Vivere in totale autonomia in un ambiente multiculturale ha rafforzato il mio spirito di adattamento e impresso una decisa accelerazione alla mia padronanza dell'inglese. Da quell'esperienza è nato un profondo amore per i viaggi, per l'esplorazione di nuove culture e per il confronto con realtà visive differenti: una curiosità costante che arricchisce tuttora la mia visione e consolida continuamente il mio inglese scritto e parlato (livello B1/B2).",
+  
+      journey_03_phase: "03 / I Primi Passi nel Settore",
       journey_03_title: "Ritratti, Gavetta & Copertine Musicali",
-      journey_03_text: "Ho aperto un profilo Instagram pubblicando ritratti e lavori grafici, offrendo creazioni gratuite per farmi conoscere. Con l'aumentare delle richieste sono arrivati i primi lavori retribuiti, realizzando grafiche e cover art per artisti emergenti e nomi affermati come Laioung e Blair. Consapevole di dover dare una solida base tecnica al mio istinto, ho frequentato un corso specialistico di grafica pubblicitaria.",
-      journey_04_phase: "04 / L'Avventura Streetwear",
-      journey_04_title: "La Nascita di Exxxplicit & I Primi Sold-Out",
-      journey_04_text: "Dalla passione per la moda è nato <b>Exxxplicit</b>, brand di abbigliamento creato con due soci. Ho curato la preparazione dei file di stampa, il packaging e il marketing. Ho sviluppato un concept forte incentrato sulla connessione tra sesso e amore: un'idea visiva che ha creato un vero trend, portando a continui sold-out. Anche se il progetto si è poi chiuso per divergenze di visione tra soci, mi ha formato concretamente sul brand building e sulla produzione reale.",
-      journey_05_phase: "05 / Maturità & Nuovi Orizzonti",
-      journey_05_title: "Etica nel Retail, Evoluzione & Prossimi Passi",
-      journey_05_text: "Per mantenermi in autonomia ho lavorato 5 anni nel retail d'abbigliamento, sviluppando etica lavorativa, senso del dovere e rapporto col pubblico. Parallelamente ho curato la parte grafica e social del negozio, proponendo layout puliti e contemporanei. Oggi, forte di maturità progettuale, abilità di branding, basi di codice frontend e disciplina, sono pronto a portare valore a un'agenzia o studio creativo strutturato."
+      journey_03_text: "Deciso a trasformare l'istinto in una carriera concreta, ho aperto un profilo Instagram per esporre i miei lavori, realizzando artwork e ritratti digitali anche a titolo gratuito per affinare la tecnica e generare visibilità. La qualità dei progetti ha presto aperto la strada a commissioni retribuite: ho curato visual e cover art ufficiali per la scena musicale, collaborando sia con talenti emergenti che con artisti affermati quali Laioung e Blair. Desideroso di colmare ogni lacuna tecnica con solide basi metodologiche, ho successivamente frequentato un corso specialistico avanzato in grafica pubblicitaria.",
+  
+      journey_04_phase: "04 / Il Progetto Moda",
+      journey_04_title: "La Nascita di Exxxplicit & I Sold-Out",
+      journey_04_text: "Attratto dalla cultura dell'abbigliamento, ho fondato con due soci il brand indipendente <b>Exxxplicit</b>. Qui ho assunto la direzione artistica completa: dalla creazione dei file di stampa serigrafica e packaging, fino alla strategia di comunicazione digitale. Ho concepito un'estetica visiva basata sull'unione viscerale tra sentimento, amore ed esplicita intimità. L'idea ha innescato un vero trend, generando un forte engagement organico e portando le collezioni a ripetuti sold-out. Nonostante la conclusione del progetto per divergenze di visione con i soci, questa esperienza mi ha formato concretamente nella gestione reale della produzione e del brand building.",
+  
+      journey_05_phase: "05 / Maturità Lavorativa",
+      journey_05_title: "Etica Professionale & Nuove Sfide",
+      journey_05_text: "Per sostenere la mia indipendenza economica ho lavorato per cinque anni nel retail d'abbigliamento. Questo percorso mi ha trasmesso una rigorosa etica del dovere, empatia con il cliente e capacità di gestione dei ritmi commerciali. Al contempo ho supportato il punto vendita curandone la comunicazione social e la veste grafica, introducendo layout contemporanei rispetto ai canoni promozionali locali. Forte di una solida padronanza visiva, della comprensione delle dinamiche di brand, di competenze frontend e di una provata disciplina professionale, sono pronto a portare valore e dedizione a un'agenzia o studio creativo strutturato."
     }
   };
   
