@@ -1,107 +1,220 @@
-/* ! SEZIONE FOTO */
-
-.photoCube {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 280px;
-    height: 350px;
-    background: linear-gradient(135deg, #eae8e8, #ffffff);
-    border-radius: 120px;
-    border: 1px solid #d8d6d6;
-    padding: 10px;
-    box-sizing: border-box;
-    overflow: hidden;
+/* ===================================================
+   HERO / PROFILO
+   =================================================== */
+   .about-hero {
+    padding: 60px 24px 40px;
+    max-width: 1100px;
     margin: 0 auto;
-
+    box-sizing: border-box;
 }
 
-.photoCube:hover{
-    transform: translateY(-4px) scale(1.55);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
 }
 
-.myphoto {
+/* ===================================================
+   CARD FOTO & CORNICE ELEGANTE
+   =================================================== */
+.photo-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.photo-wrapper {
+    width: 260px;
+    height: 330px;
+    border-radius: 32px;
+    padding: 8px;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.photo-wrapper:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.14);
+}
+
+.profile-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 120px;
+    border-radius: 24px;
+    display: block;
 }
 
-
-.photoSection {
-    display: flex;
-    justify-content: center;
+/* Badge di stato */
+.status-badge {
+    display: inline-flex;
     align-items: center;
-    padding: 30px;
+    gap: 8px;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-family: 'Gyroscope Sans', sans-serif;
+    color: #222;
+    background: #f0f0f0;
+    border-radius: 30px;
+    border: 1px solid #dcdcdc;
 }
 
-.boxTextBackground {
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #10b981;
+    box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+}
+
+/* ===================================================
+   DETTAGLI PROFILO & TAG ANAGRAFICI
+   =================================================== */
+.profile-details {
+    max-width: 520px;
     font-family: 'Gyroscope Sans', sans-serif;
-    display: flex;
-    justify-content: center;
+}
+
+.profile-name {
+    font-size: clamp(34px, 5vw, 50px);
+    font-weight: 700;
+    margin: 0 0 14px;
+    color: #000000;
+    line-height: 1.1;
+}
+
+.profile-role {
     font-size: 20px;
-    text-align: center;
-
+    color: #444444;
+    line-height: 1.5;
+    margin: 0 0 24px;
 }
 
-/* ! INFO [ICONE NOME, CITTA' & DATA NASCITA] */
-
-.infoColumn {
-    font-family: 'Gyroscope Sans', sans-serif;
-    position: absolute;
-    right: 80px;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: right;
-    font-size: 18px;
-    color: black;
-    line-height: 1.8;
+.profile-role b {
+    color: #000000;
 }
 
-
-/* ! Responsive: INFO */
-
-@media (max-width: 768px) {
-    .infoColumn {
-      position: static;           
-      transform: none;             
-      text-align: center;          
-      margin-top: 20px;            
-      right: auto;                 
-      top: auto;
-    }
-  }
-  
-
-
-/* ! SKILLS BOX */
-
-.boxSkills {
+.meta-tags {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
-
-.info {
-    border-collapse: collapse;
-    width: 80%;           
-    text-align: left;     
+.meta-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #222;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
 
-.info td {
-    padding: 10px 15px;
+.meta-tag i {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
 }
 
-.info tr:nth-child(even) {
-    background-color: #f2f2f2; 
+/* ===================================================
+   SKILLS SECTION (CARD SYSTEM)
+   =================================================== */
+.skills-section {
+    max-width: 1100px;
+    margin: 30px auto 90px;
+    padding: 0 24px;
+    box-sizing: border-box;
+    font-family: 'Gyroscope Sans', sans-serif;
 }
 
-.info tr:nth-child(odd) {
-    background-color: #ffffff; 
+.skills-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    color: #000000;
 }
 
-.info tr:hover {
-    background-color: #ddd; 
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    color: #000000;
+}
+
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.skill-icons img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.skill-icons img:hover {
+    transform: scale(1.18);
+}
+
+/* ===================================================
+   RESPONSIVE MOBILE (<= 768px)
+   =================================================== */
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 40px 20px 20px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 32px;
+    }
+
+    .photo-wrapper {
+        width: 220px;
+        height: 280px;
+    }
+
+    .meta-tags {
+        justify-content: center;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
 }
