@@ -21,11 +21,71 @@ body {
 }
 
 /* ===================================================
+   TASTO "TORNA A WORKS" (BLINDATO CONTRO BOOTSTRAP)
+   =================================================== */
+.back-btn-container {
+  display: flex !important;
+  justify-content: flex-start !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 35px 8% 10px 8% !important;
+  box-sizing: border-box !important;
+}
+
+.back-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  text-decoration: none !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  padding: 10px 22px !important;
+  border-radius: 50px !important;
+  font-family: 'Gyroscope Sans', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  border: 1px solid #dcdcdc !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06) !important;
+  cursor: pointer !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.back-btn svg {
+  display: block !important;
+  width: 18px !important;
+  height: 18px !important;
+  transition: transform 0.25s ease !important;
+}
+
+.back-btn svg path {
+  stroke: #000000 !important;
+  transition: stroke 0.25s ease !important;
+}
+
+.back-btn:hover {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16) !important;
+  transform: translateX(-5px) !important;
+}
+
+.back-btn:hover svg {
+  transform: translateX(-3px) !important;
+}
+
+.back-btn:hover svg path {
+  stroke: #ffffff !important;
+}
+
+/* ===================================================
    HERO / INTRO SECTION
    =================================================== */
 .worksIntro {
   text-align: center;
-  padding: 100px 20px 40px;
+  padding: 40px 20px 40px;
   max-width: 820px;
   margin: 0 auto;
 }
@@ -109,7 +169,7 @@ body {
 }
 
 /* ===================================================
-   1. BRANDING WORKS (CARDS IN EVIDENZA)
+   1. BRANDING WORKS
    =================================================== */
 .branding-section {
   padding: 40px 8% 60px;
@@ -188,7 +248,6 @@ body {
   margin-bottom: 18px;
 }
 
-/* Pulsanti */
 .buttons {
   display: flex;
   flex-wrap: wrap;
@@ -231,7 +290,7 @@ body {
 }
 
 /* ===================================================
-   2. VISUAL WORKS GALLERY (POSTERS & GRAPHICS)
+   2. VISUAL WORKS GALLERY
    =================================================== */
 .visualWorks {
   padding: 60px 8%;
@@ -275,7 +334,7 @@ body {
 }
 
 /* ===================================================
-   3. WEB PROJECTS (EXTRA DEV SKILLSET)
+   3. WEB PROJECTS
    =================================================== */
 .extra-dev-section {
   padding: 70px 8% 100px;
@@ -332,11 +391,20 @@ body {
 }
 
 /* ===================================================
-   RESPONSIVE MOBILE (<= 768px)
+   RESPONSIVE MOBILE
    =================================================== */
 @media (max-width: 768px) {
+  .back-btn-container {
+    padding: 20px 5% 0 5% !important;
+  }
+
+  .back-btn {
+    padding: 8px 18px !important;
+    font-size: 13px !important;
+  }
+
   .worksIntro {
-    padding: 70px 20px 30px;
+    padding: 40px 20px 25px;
   }
 
   .branding-section,
