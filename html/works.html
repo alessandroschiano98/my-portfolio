@@ -15,7 +15,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-  <title>Works</title>
+  <title>Works — Alessandro Schiano</title>
 </head>
 
 <body>
@@ -46,69 +46,58 @@
     </nav>
   </section>
 
+  <!-- ! INTRO HEADER -->
   <section class="worksIntro fade-in">
-    <h1>I build digital experiences that blend design and code.</h1>
-    <p>Each project is a balance between aesthetics and functionality — and I love building both.</p>
+    <span class="works-badge">Graphic & Visual Portfolio</span>
+    <h1>Visual Identity & Art Direction</h1>
+    <p class="works-description">
+      Specialized in crafting brand identities, editorial visuals, and impactful aesthetics. 
+      Web development is my added value to translate visual concepts into functional interfaces.
+    </p>
   </section>
 
-  <!-- ! PROGETTI WEB -->
-  <section class="webWorks fade-in">
-    <h2>Web Projects</h2>
+  <!-- ! 1. BRANDING WORKS (CORE FOCUS) -->
+  <section class="webWorks branding-section fade-in">
+    <div class="section-header">
+      <span class="sub-badge">Featured Case Studies</span>
+      <h2>Brand Identity & Direction</h2>
+      <p class="section-desc">Comprehensive identity systems designed with careful attention to typography, storytelling, and visual consistency.</p>
+    </div>
 
-    <div class="projectsGrid">
+    <div class="projectsGrid branding-grid">
 
-      <!-- ! MyPortfolio -->
-      <div class="projectCard highlight">
-        <img src="/img/logo.png" alt="Anteprima portfolio" loading="lazy">
+      <!-- ! TOKKO -->
+      <div class="projectCard highlight branding-card">
+        <div class="projectImageWrap">
+          <img src="/img/branding1.webp" alt="Tokko Brand Identity Preview" loading="lazy">
+        </div>
         <div class="projectContent">
-          <h3>MyPortfolio</h3>
+          <h3>TOKKO</h3>
           <p>
-            Development of my personal portfolio, focused on UI/UX, smooth animations, and responsive design.
+            Full brand identity, logo design guidelines, social media advertising campaigns, and mobile e-commerce UI
+            mockups for an Italian gourmet food brand.
           </p>
-          <p class="tech">HTML • CSS • JavaScript • Bootstrap</p>
+          <p class="tech">Brand Identity • Art Direction • Social Ads • Packaging</p>
           <div class="buttons">
-            <a href="https://github.com/alessandroschiano98/my-portfolio" class="btn secondary" target="_blank"
-              rel="noopener noreferrer">GitHub</a>
-            <a href="https://alessandroschiano.altervista.org/" class="btn secondary" target="_blank"
-              rel="noopener noreferrer">Website</a>
+            <a href="tokko.html" class="btn primary">View Case Study</a>
           </div>
         </div>
       </div>
 
-      <!-- ! MyTravels -->
-      <div class="projectCard highlight">
-        <img src="/img/travellogo.png" alt="Anteprima mytravel" loading="lazy">
-        <div class="projectContent">
-          <h3>MyTravels</h3>
-          <p>
-            Development of a personal travel page, focused on visual storytelling, clean design, and a smooth,
-            responsive user experience.
-          </p>
-          <p class="tech">HTML • CSS • JavaScript • Bootstrap</p>
-          <div class="buttons">
-            <a href="https://github.com/alessandroschiano98/my-travels" class="btn secondary" target="_blank"
-              rel="noopener noreferrer">GitHub</a>
-            <a href="https://travels.altervista.org" class="btn secondary" target="_blank"
-              rel="noopener noreferrer">Website</a>
-          </div>
+      <!-- ! EXXXPLICIT -->
+      <div class="projectCard highlight branding-card">
+        <div class="projectImageWrap">
+          <img src="/img/exxxplicit1.webp" alt="Exxxplicit Brand Identity Preview" loading="lazy">
         </div>
-      </div>
-
-      <!-- ! MyCineteca -->
-      <div class="projectCard highlight">
-        <img src="/img/logo-mycineteca.png" alt="Anteprima mycineteca" loading="lazy">
         <div class="projectContent">
-          <h3>MyCineteca</h3>
+          <h3>Exxxplicit</h3>
           <p>
-            A personal movie catalog built with a focus on visual storytelling, clean UI, and a smooth, fully responsive
-            user experience. Designed to showcase curated films divided by genre with an intuitive browsing flow.
+            Complete visual identity project developed with attention to visual coherence, distinct tone of voice,
+            typography system, and brand aesthetic.
           </p>
-          <p class="tech">HTML • CSS • JavaScript • Bootstrap • React</p>
+          <p class="tech">Visual Identity • Logo Design • Typography • Merchandising</p>
           <div class="buttons">
-            <a href="https://github.com/alessandroschiano98/my-cineteca" class="btn secondary" target="_blank"
-              rel="noopener noreferrer">GitHub</a>
-            <a href="https://my-cineteca.vercel.app/" class="btn secondary" target="_blank"
-              rel="noopener noreferrer">Website</a>
+            <a href="exxxplicit.html" class="btn primary">View Case Study</a>
           </div>
         </div>
       </div>
@@ -116,11 +105,14 @@
     </div>
   </section>
 
-  <!-- ! VISUAL WORKS -->
+  <!-- ! 2. VISUAL WORKS GALLERY -->
   <section class="visualWorks fade-in">
-    <h2>Visual Works</h2>
-    <p><b>A selection of graphic works that reflect my visual background and attention to aesthetic detail.</b></p>
-    <p class="tech">Adobe Photoshop • Adobe Illustrator • Adobe Premiere • Blender</p>
+    <div class="section-header">
+      <span class="sub-badge">Artworks & Posters</span>
+      <h2>Visual Showcase</h2>
+      <p class="section-desc">A curated selection of poster designs, editorial explorations, and visual arts.</p>
+      <p class="tech-tools">Adobe Photoshop • Adobe Illustrator • Adobe Premiere • Blender</p>
+    </div>
 
     <div class="visualGrid">
       <div class="visualCard">
@@ -155,48 +147,80 @@
       </div>
     </div>
   </section>
+
+  <!-- LIGHTBOX -->
   <div id="visual-lightbox">
     <img src="" alt="Visual Work">
   </div>
 
-  <!-- ! BRANDING WORKS -->
-  <section class="webWorks fade-in">
+  <!-- ! 3. WEB PROJECTS (EXTRA DEV SKILLSET) -->
+  <section class="webWorks extra-dev-section fade-in">
     <div class="section-header">
-      <h2>Branding Works</h2>
-      <p><b>A selection of brand identity projects that combine aesthetics, consistency, and storytelling.</b></p>
-      <p class="tech">Adobe Photoshop • Adobe Illustrator</p>
+      <span class="sub-badge dev-badge">Secondary / Extra Skillset</span>
+      <h2>Interactive & Web Builds</h2>
+      <p class="section-desc">Frontend implementations developed to give interactive life to design layouts.</p>
     </div>
 
     <div class="projectsGrid">
 
-      <!-- ! TOKKO -->
-      <div class="projectCard highlight">
-        <img src="/img/branding1.webp" alt="Tokko Brand Identity Preview" loading="lazy">
+      <!-- ! MyPortfolio -->
+      <div class="projectCard">
+        <div class="projectImageWrap webWrap">
+          <img src="/img/logo.png" alt="Anteprima portfolio" loading="lazy">
+        </div>
         <div class="projectContent">
-          <h3>TOKKO</h3>
+          <h3>MyPortfolio</h3>
           <p>
-            Full brand identity, logo design guidelines, social media advertising campaigns, and mobile e-commerce UI
-            mockups for an Italian gourmet food brand.
+            Development of my personal portfolio, focused on UI/UX, smooth animations, and responsive design.
           </p>
-          <p class="tech">Brand Identity • Art Direction • Social Ads • Packaging</p>
+          <p class="tech">HTML • CSS • JavaScript • Bootstrap</p>
           <div class="buttons">
-            <a href="tokko.html" class="btn secondary">Case Study</a>
+            <a href="https://github.com/alessandroschiano98/my-portfolio" class="btn secondary" target="_blank"
+              rel="noopener noreferrer">GitHub</a>
+            <a href="https://alessandroschiano.altervista.org/" class="btn secondary" target="_blank"
+              rel="noopener noreferrer">Website</a>
           </div>
         </div>
       </div>
 
-      <!-- ! EXXXPLICIT -->
-      <div class="projectCard highlight">
-        <img src="/img/exxxplicit1.webp" alt="Exxxplicit Brand Identity Preview" loading="lazy">
+      <!-- ! MyTravels -->
+      <div class="projectCard">
+        <div class="projectImageWrap webWrap">
+          <img src="/img/travellogo.png" alt="Anteprima mytravel" loading="lazy">
+        </div>
         <div class="projectContent">
-          <h3>Exxxplicit</h3>
+          <h3>MyTravels</h3>
           <p>
-            Complete visual identity project developed with attention to visual coherence, distinct tone of voice,
-            typography system, and brand aesthetic.
+            Development of a personal travel page, focused on visual storytelling, clean design, and a smooth,
+            responsive user experience.
           </p>
-          <p class="tech">Visual Identity • Logo Design • Typography • Merchandising</p>
+          <p class="tech">HTML • CSS • JavaScript • Bootstrap</p>
           <div class="buttons">
-            <a href="exxxplicit.html" class="btn secondary">Case Study</a>
+            <a href="https://github.com/alessandroschiano98/my-travels" class="btn secondary" target="_blank"
+              rel="noopener noreferrer">GitHub</a>
+            <a href="https://travels.altervista.org" class="btn secondary" target="_blank"
+              rel="noopener noreferrer">Website</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ! MyCineteca -->
+      <div class="projectCard">
+        <div class="projectImageWrap webWrap">
+          <img src="/img/logo-mycineteca.png" alt="Anteprima mycineteca" loading="lazy">
+        </div>
+        <div class="projectContent">
+          <h3>MyCineteca</h3>
+          <p>
+            A personal movie catalog built with a focus on visual storytelling, clean UI, and a smooth, fully responsive
+            user experience. Designed to showcase curated films divided by genre with an intuitive browsing flow.
+          </p>
+          <p class="tech">HTML • CSS • JavaScript • Bootstrap • React</p>
+          <div class="buttons">
+            <a href="https://github.com/alessandroschiano98/my-cineteca" class="btn secondary" target="_blank"
+              rel="noopener noreferrer">GitHub</a>
+            <a href="https://my-cineteca.vercel.app/" class="btn secondary" target="_blank"
+              rel="noopener noreferrer">Website</a>
           </div>
         </div>
       </div>

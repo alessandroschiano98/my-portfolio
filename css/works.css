@@ -1,17 +1,18 @@
-/* ! Reset */
+/* ! Reset & Typography */
 body {
   margin: 0;
   padding: 0;
-  font-family: "BBH Sans Bogle", sans-serif;
+  font-family: 'Gyroscope Sans', sans-serif;
   background-color: #f9f9f9;
-  color: #111;
+  color: #111111;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* ! ANIMAZIONE FADE-IN */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .fade-in.show {
@@ -19,87 +20,132 @@ body {
   transform: translateY(0);
 }
 
-/* ! INTRO SECTION */
+/* ===================================================
+   HERO / INTRO SECTION
+   =================================================== */
 .worksIntro {
   text-align: center;
-  padding: 120px 20px 60px;
+  padding: 100px 20px 40px;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.works-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .worksIntro h1 {
-  font-family: 'Gyroscope Sans', sans-serif;
-  font-size: clamp(32px, 5vw, 60px);
-  margin-bottom: 20px;
+  font-size: clamp(34px, 5.5vw, 60px);
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  color: #000000;
 }
 
-.worksIntro p {
-  font-size: 18px;
-  color: #555;
-  margin: 6px 0;
+.works-description {
+  font-size: clamp(16px, 2vw, 19px);
+  color: #555555;
+  line-height: 1.6;
+  margin: 0 auto;
 }
 
-/* ! BOTTONE TORNA INDIETRO */
-.back-btn-container {
-  margin-bottom: 25px;
-}
-
-.back-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  background: #e9e8e8;
-  color: #111;
-  padding: 8px 18px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-  transition: background 0.25s ease, transform 0.2s ease, color 0.25s ease;
-}
-
-.back-btn:hover {
-  background: #111;
-  color: #fff;
-  transform: translateX(-4px);
-}
-
-/* ! GRIGLIA PROGETTI (WEB & BRANDING WORKS) */
-.webWorks {
-  padding: 40px 10% 60px;
-}
+/* ===================================================
+   SECTION HEADERS & BADGES
+   =================================================== */
 .section-header {
   text-align: center;
-  margin-bottom: 20px;
+  max-width: 650px;
+  margin: 0 auto 35px;
+}
+
+.sub-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: #e9e8e8;
+  color: #222222;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.sub-badge.dev-badge {
+  background-color: #dedede;
+  color: #555555;
 }
 
 .webWorks h2,
 .visualWorks h2 {
-  font-family: 'Gyroscope Sans', sans-serif;
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 10px;
+  font-size: clamp(26px, 4vw, 36px);
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: #000000;
+}
+
+.section-desc {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+.tech-tools {
+  color: #777777;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 10px;
+  letter-spacing: 0.02em;
+}
+
+/* ===================================================
+   1. BRANDING WORKS (CARDS IN EVIDENZA)
+   =================================================== */
+.branding-section {
+  padding: 40px 8% 60px;
 }
 
 .projectsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
-  margin: 40px 0;
+  gap: 36px;
+  margin-top: 20px;
+}
+
+.branding-grid {
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }
 
 .projectCard {
-  background: #fff;
+  background: #ffffff;
   border-radius: 20px;
+  border: 1px solid #e8e8e8;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: column;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .projectCard:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.09);
+}
+
+.projectImageWrap {
+  width: 100%;
+  overflow: hidden;
+  background-color: #ebebeb;
 }
 
 .projectCard img {
@@ -107,6 +153,10 @@ body {
   height: 220px;
   object-fit: cover;
   display: block;
+}
+
+.branding-card img {
+  height: 260px;
 }
 
 .projectContent {
@@ -117,29 +167,29 @@ body {
 }
 
 .projectContent h3 {
-  font-family: 'Gyroscope Sans', sans-serif;
   font-size: 22px;
-  margin-top: 0;
-  margin-bottom: 10px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: #000000;
 }
 
 .projectContent p {
-  margin: 6px 0;
-  line-height: 1.5;
-  color: #444;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #444444;
+  margin: 0 0 14px;
 }
 
 .tech {
-  color: #777;
-  font-size: 14px;
-  font-weight: 500;
-  margin-top: 8px;
+  color: #777777;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: auto;
+  margin-bottom: 18px;
 }
 
-/* ! PULSANTI AZIONE */
+/* Pulsanti */
 .buttons {
-  margin-top: auto;
-  padding-top: 16px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -147,36 +197,47 @@ body {
 
 .btn {
   text-decoration: none;
-  background: #111;
-  color: #fff;
-  padding: 8px 18px;
+  padding: 9px 20px;
   border-radius: 8px;
   font-size: 14px;
+  font-weight: 600;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.25s ease, color 0.25s ease;
+  transition: all 0.25s ease;
 }
 
-.btn:hover {
-  background: #333;
-  color: #fff;
+.btn.primary {
+  background: #000000;
+  color: #ffffff;
+}
+
+.btn.primary:hover {
+  background: #2b2b2b;
+  color: #ffffff;
+  transform: translateX(2px);
 }
 
 .btn.secondary {
   background: #e9e8e8;
-  color: #111;
+  color: #111111;
+  border: 1px solid #dcdcdc;
 }
 
 .btn.secondary:hover {
-  background: #dcdcdc;
-  color: #000;
+  background: #000000;
+  color: #ffffff;
+  border-color: #000000;
 }
 
-/* ! VISUAL WORKS */
+/* ===================================================
+   2. VISUAL WORKS GALLERY (POSTERS & GRAPHICS)
+   =================================================== */
 .visualWorks {
-  padding: 60px 10%;
-  text-align: center;
+  padding: 60px 8%;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .visualGrid {
@@ -189,54 +250,73 @@ body {
 .visualCard {
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 14px;
   cursor: pointer;
+  background: #dedede;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .visualCard img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
   display: block;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .visualCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
-@media (max-width: 768px) {
-  .visualCard img {
-    height: 150px;
-  }
-  .projectsGrid {
-    grid-template-columns: 1fr;
-    margin: 20px 0;
-  }
-  .webWorks,
-  .visualWorks {
-    padding: 40px 5%;
-  }
+.visualCard:hover img {
+  transform: scale(1.05);
 }
 
-/* ! LIGHTBOX SCHERMO INTERO */
+/* ===================================================
+   3. WEB PROJECTS (EXTRA DEV SKILLSET)
+   =================================================== */
+.extra-dev-section {
+  padding: 70px 8% 100px;
+}
+
+.extra-dev-section .projectCard {
+  background: #fdfdfd;
+}
+
+.webWrap {
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+}
+
+.extra-dev-section .projectCard img {
+  width: auto;
+  height: 120px;
+  object-fit: contain;
+}
+
+/* ===================================================
+   LIGHTBOX FULLSCREEN
+   =================================================== */
 #visual-lightbox {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.88);
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
-  z-index: 9999;
+  z-index: 99999;
 }
 
 #visual-lightbox.show {
@@ -248,5 +328,35 @@ body {
   max-width: 90vw;
   max-height: 90vh;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 10px;
+}
+
+/* ===================================================
+   RESPONSIVE MOBILE (<= 768px)
+   =================================================== */
+@media (max-width: 768px) {
+  .worksIntro {
+    padding: 70px 20px 30px;
+  }
+
+  .branding-section,
+  .visualWorks,
+  .extra-dev-section {
+    padding: 40px 5%;
+  }
+
+  .branding-grid,
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .visualGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .visualCard img {
+    height: 160px;
+  }
 }
