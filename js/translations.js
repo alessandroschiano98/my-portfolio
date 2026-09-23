@@ -78,7 +78,7 @@ const translations = {
       // Journey Timeline (Refined English)
       journey_tag: "Background",
       journey_title: "My Journey",
-      journey_sub: "From early self-taught experiments to streetwear brand architecture and commercial discipline.",
+      journey_sub: "From early self-taught experiments to streetwear brand architecture, agrifood export identity, and commercial discipline.",
   
       journey_01_phase: "01 / The Turning Point",
       journey_01_title: "From Culinary Aspirations to Digital Craft",
@@ -96,9 +96,13 @@ const translations = {
       journey_04_title: "Co-Founding Exxxplicit & Generating Cultural Resonance",
       journey_04_text: "Fascinated by fashion culture, I co-founded the streetwear label <b>Exxxplicit</b> alongside two partners. Taking full ownership of art direction, I managed everything from textile print files to packaging and marketing campaigns. I crafted a bold concept bridging extreme emotional intimacy, sexuality, and sentimentality—a distinctive narrative that resonated with our audience, sparked spontaneous social sharing, and consistently produced sold-out collections. While the partnership eventually ran its course due to misaligned long-term visions, the venture provided rigorous, trial-by-fire experience in real-world brand building.",
   
-      journey_05_phase: "05 / Commercial Discipline",
-      journey_05_title: "Retail Ethics & Readier Than Ever",
-      journey_05_text: "To support my independence and remain self-sufficient, I dedicated five years to clothing retail. This chapter instilled invaluable lessons in professional work ethic, customer psychology, and operational resilience. In parallel, I proactively oversaw the store’s social presence and graphic materials, introducing contemporary, elevated design standards against conventional local retail norms. Today, backed by real-world discipline, verified branding expertise, front-end development foundations, and an insatiable drive for excellence, I am actively seeking a dedicated creative role within a forward-thinking design studio or agency."
+      journey_05_phase: "05 / Agrifood Identity & Export",
+      journey_05_title: "The Tokko.it Project & Visual Packaging",
+      journey_05_text: "Following the streetwear chapter, I teamed up with one of my previous partners to support an entrepreneurial venture in the premium agrifood sector: <b>Tokko</b> (<a href='https://www.instagram.com/tokko__it/' target='_blank' rel='noopener noreferrer' style='color: inherit; text-decoration: underline;'>@tokko__it</a>). The enterprise focused on exporting genuine Italian culinary delicacies across Italy and European markets. I oversaw the full visual architecture: crafting a cohesive brand identity, premium packaging, product labeling, and structured social media curation to communicate authenticity and gastronomic excellence on an international scale.",
+  
+      journey_06_phase: "06 / Commercial Discipline",
+      journey_06_title: "Retail Ethics & Readier Than Ever",
+      journey_06_text: "To support my independence and remain self-sufficient, I dedicated five years to clothing retail. This chapter instilled invaluable lessons in professional work ethic, customer psychology, and operational resilience. In parallel, I proactively oversaw the store’s social presence and graphic materials, introducing contemporary, elevated design standards against conventional local retail norms. Today, backed by real-world discipline, verified branding expertise, front-end development foundations, and an insatiable drive for excellence, I am actively seeking a dedicated creative role within a forward-thinking design studio or agency."
     },
   
     it: {
@@ -180,7 +184,7 @@ const translations = {
       // Journey Timeline (Italiano Corretto ed Editoriale)
       journey_tag: "Background",
       journey_title: "Il Mio Percorso",
-      journey_sub: "Dalle prime sperimentazioni da autodidatta alla creazione di un brand streetwear, fino alla maturità commerciale.",
+      journey_sub: "Dalle prime sperimentazioni da autodidatta allo streetwear, fino al packaging per l'export agroalimentare e alla maturità commerciale.",
   
       journey_01_phase: "01 / La Consapevolezza",
       journey_01_title: "Dall'Istituto Alberghiero alla Vocazione Digitale",
@@ -196,11 +200,15 @@ const translations = {
   
       journey_04_phase: "04 / Il Progetto Moda",
       journey_04_title: "La Nascita di Exxxplicit & I Sold-Out",
-      journey_04_text: "Attratto dalla cultura dell'abbigliamento, ho fondato con due soci il brand indipendente <b>Exxxplicit</b>. Qui ho assunto la direzione artistica completa: dalla creazione dei file di stampa serigrafica e packaging, fino alla strategia di comunicazione digitale. Ho concepito un'estetica visiva basata sull'unione viscerale tra sentimento, amore ed esplicita intimità. L'idea ha innescato un vero trend, generando un forte engagement organico e portando le collezioni a ripetuti sold-out. Nonostante la conclusione del progetto per divergenze di visione con i soci, questa esperienza mi ha formato concretamente nella gestione reale della produzione e del brand building.",
+      journey_04_text: "Attratto dalla cultura dell'abbigliamento, ho fondato con due soci il brand indipendente <b>Exxxplicit</b>. Qui ho assunto la direzione visiva completa: dalla creazione dei file di stampa serigrafica e packaging, fino alla strategia di comunicazione digitale. Ho concepito un'estetica visiva basata sull'unione viscerale tra sentimento, amore ed esplicita intimità. L'idea ha innescato un vero trend, generando un forte engagement organico e portando le collezioni a ripetuti sold-out. Nonostante la conclusione del progetto per divergenze di visione con i soci, questa esperienza mi ha formato concretamente nella gestione reale della produzione e del brand building.",
   
-      journey_05_phase: "05 / Maturità Lavorativa",
-      journey_05_title: "Etica Professionale & Nuove Sfide",
-      journey_05_text: "Per sostenere la mia indipendenza economica ho lavorato per cinque anni nel retail d'abbigliamento. Questo percorso mi ha trasmesso una rigorosa etica del dovere, empatia con il cliente e capacità di gestione dei ritmi commerciali. Al contempo ho supportato il punto vendita curandone la comunicazione social e la veste grafica, introducendo layout contemporanei rispetto ai canoni promozionali locali. Forte di una solida padronanza visiva, della comprensione delle dinamiche di brand, di competenze frontend e di una provata disciplina professionale, sono pronto a portare valore e dedizione a un'agenzia o studio creativo strutturato."
+      journey_05_phase: "05 / Branding Agroalimentare & Export",
+      journey_05_title: "L'Esperienza Tokko.it & Il Packaging Gourmet",
+      journey_05_text: "Subito dopo Exxxplicit, ho avviato una nuova collaborazione insieme a uno dei miei precedenti soci per affiancare un imprenditore nello sviluppo del brand <b>Tokko</b> (<a href='https://www.instagram.com/tokko__it/' target='_blank' rel='noopener noreferrer' style='color: inherit; text-decoration: underline;'>@tokko__it</a>). Il progetto era focalizzato sull'export di eccellenze gastronomiche e agroalimentari italiane verso i mercati nazionali ed europei. Ho gestito l'intero costrutto visivo del brand: dallo studio del packaging alimentare e dell'etichettatura conforme, fino alla narrazione fotografica e alla linea editoriale della pagina Instagram, valorizzando l'autenticità e l'estetica gourmet del Made in Italy.",
+  
+      journey_06_phase: "06 / Maturità Lavorativa",
+      journey_06_title: "Etica Professionale & Nuove Sfide",
+      journey_06_text: "Per sostenere la mia indipendenza economica ho lavorato per cinque anni nel retail d'abbigliamento. Questo percorso mi ha trasmesso una rigorosa etica del dovere, empatia con il cliente e capacità di gestione dei ritmi commerciali. Al contempo ho supportato il punto vendita curandone la comunicazione social e la veste grafica, introducendo layout contemporanei rispetto ai canoni promozionali locali. Forte di una solida padronanza visiva, della comprensione delle dinamiche di brand, di competenze frontend e di una provata disciplina professionale, sono pronto a portare valore e dedizione a un'agenzia o studio creativo strutturato."
     }
   };
   
