@@ -1,0 +1,130 @@
+[
+  {
+    "name": {
+      "it": "NAPOLI / CASA",
+      "en": "NAPLES / HOME"
+    },
+    "lat": 40.85,
+    "lon": 14.27
+  },
+  {
+    "name": {
+      "it": "LITUANIA",
+      "en": "LITHUANIA"
+    },
+    "lat": 55.17,
+    "lon": 23.88
+  },
+  {
+    "name": {
+      "it": "SPAGNA",
+      "en": "SPAIN"
+    },
+    "lat": 40.46,
+    "lon": -3.75
+  },
+  {
+    "name": {
+      "it": "MESSICO",
+      "en": "MEXICO"
+    },
+    "lat": 23.63,
+    "lon": -102.55
+  },
+  {
+    "name": {
+      "it": "STATI UNITI",
+      "en": "UNITED STATES"
+    },
+    "lat": 25.76,
+    "lon": -80.19
+  },
+  {
+    "name": {
+      "it": "PORTOGALLO",
+      "en": "PORTUGAL"
+    },
+    "lat": 39.4,
+    "lon": -8.22
+  },
+  {
+    "name": {
+      "it": "MAROCCO",
+      "en": "MOROCCO"
+    },
+    "lat": 31.79,
+    "lon": -7.09
+  },
+  {
+    "name": {
+      "it": "SVIZZERA",
+      "en": "SWITZERLAND"
+    },
+    "lat": 46.82,
+    "lon": 8.23
+  },
+  {
+    "name": {
+      "it": "BELGIO",
+      "en": "BELGIUM"
+    },
+    "lat": 50.5,
+    "lon": 4.47
+  },
+  {
+    "name": {
+      "it": "FRANCIA",
+      "en": "FRANCE"
+    },
+    "lat": 46.6,
+    "lon": 2.21
+  },
+  {
+    "name": {
+      "it": "REGNO UNITO",
+      "en": "UNITED KINGDOM"
+    },
+    "lat": 55.38,
+    "lon": -3.44
+  },
+  {
+    "name": {
+      "it": "SINGAPORE",
+      "en": "SINGAPORE"
+    },
+    "lat": 1.35,
+    "lon": 103.82
+  },
+  {
+    "name": {
+      "it": "GRECIA",
+      "en": "GREECE"
+    },
+    "lat": 39.07,
+    "lon": 21.82
+  },
+  {
+    "name": {
+      "it": "MONTENEGRO",
+      "en": "MONTENEGRO"
+    },
+    "lat": 42.71,
+    "lon": 19.37
+  },
+  {
+    "name": {
+      "it": "ROMANIA",
+      "en": "ROMANIA"
+    },
+    "lat": 45.94,
+    "lon": 24.97
+  },
+  {
+    "name": {
+      "it": "AUSTRIA",
+      "en": "AUSTRIA"
+    },
+    "lat": 47.52,
+    "lon": 14.55
+  }
+]

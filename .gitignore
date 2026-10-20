@@ -1,0 +1,7 @@
+
+node_modules/
+dist/
+public/media/
+public/documents/
+public/fonts/
+*.zip

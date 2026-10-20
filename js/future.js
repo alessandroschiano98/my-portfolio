@@ -27,8 +27,11 @@
     document.addEventListener('keydown', e => { if(e.key === 'Escape') { toggle.checked=false; links.classList.remove('active'); toggle.setAttribute('aria-expanded','false'); } });
   }
   if ('IntersectionObserver' in window && !reduced.matches) {
-    const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); } }), {threshold:.08});
-    document.querySelectorAll('.work-card,.contact-box,.stat-category,.timeline-item,.section-header').forEach(el => {el.classList.add('reveal-ready');observer.observe(el);});
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible','show'); observer.unobserve(entry.target); } }), {threshold:.08});
+    document.querySelectorAll('.work-card,.contact-box,.stat-category,.timeline-item,.section-header,.fade-in,.visualCard,.projectCard').forEach(el => {el.classList.add('reveal-ready');observer.observe(el);});
+  }
+  if (reduced.matches || !('IntersectionObserver' in window)) {
+    document.querySelectorAll('.fade-in,.visualCard,.projectCard').forEach(el => el.classList.add('show'));
   }
   const lightbox = document.querySelector('#visual-lightbox');
   if (lightbox) {
