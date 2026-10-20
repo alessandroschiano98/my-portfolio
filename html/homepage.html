@@ -1,328 +1,4 @@
-<!DOCTYPE html>
-<html lang="it">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Fonts & CSS Base -->
-    <link rel="stylesheet" href="../css/fonts.css">
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/homepage.css">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!-- Flaticon Icons -->
-    <link rel='stylesheet'
-        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel='stylesheet'
-        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-
-    <title>Alessandro Schiano — Graphic & Visual Designer</title>
-
-    <style>
-        .home-hero {
-            max-width: 1140px;
-            margin: 0 auto;
-            padding: 70px 24px 50px;
-            box-sizing: border-box;
-        }
-
-        .hero-badge-wrap {
-            margin-bottom: 20px;
-        }
-
-        .status-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 6px 16px;
-            font-size: 13px;
-            color: #222;
-            background: #ffffff;
-            border-radius: 30px;
-            border: 1px solid #dcdcdc;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-        }
-
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background-color: #10b981;
-            box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
-        }
-
-        .hero-headline {
-            font-size: clamp(38px, 6.5vw, 76px);
-            font-weight: 800;
-            line-height: 1.05;
-            letter-spacing: -0.02em;
-            color: #000000;
-            margin-bottom: 22px;
-        }
-
-        .hero-headline span {
-            display: block;
-            color: #666666;
-            font-weight: 600;
-            font-size: clamp(20px, 3.2vw, 36px);
-            margin-top: 6px;
-            letter-spacing: -0.01em;
-        }
-
-        .hero-bio {
-            max-width: 640px;
-            font-size: clamp(16px, 1.8vw, 19px);
-            line-height: 1.6;
-            color: #444444;
-            margin-bottom: 36px;
-        }
-
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-        }
-
-        .btn-main {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 13px 28px;
-            background: #000000;
-            color: #ffffff;
-            font-size: 15px;
-            font-weight: 700;
-            border-radius: 50px;
-            text-decoration: none;
-            transition: transform 0.2s ease, background 0.2s ease;
-        }
-
-        .btn-main:hover {
-            background: #262626;
-            color: #ffffff;
-            transform: translateY(-2px);
-        }
-
-        .btn-alt {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 13px 28px;
-            background: #ffffff;
-            color: #111111;
-            font-size: 15px;
-            font-weight: 700;
-            border-radius: 50px;
-            text-decoration: none;
-            border: 1px solid #dcdcdc;
-            transition: all 0.2s ease;
-        }
-
-        .btn-alt:hover {
-            background: #000000;
-            color: #ffffff;
-            border-color: #000000;
-            transform: translateY(-2px);
-        }
-
-        .core-bar-section {
-            max-width: 1140px;
-            margin: 0 auto 50px;
-            padding: 0 24px;
-            box-sizing: border-box;
-        }
-
-        .core-bar {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 12px;
-            padding: 16px 20px;
-            background: #ffffff;
-            border: 1px solid #e5e5e5;
-            border-radius: 16px;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.02);
-        }
-
-        .core-bar-label {
-            font-size: 11px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: #888888;
-            margin-right: 8px;
-        }
-
-        .core-tag {
-            padding: 6px 14px;
-            background: #f4f4f4;
-            border-radius: 30px;
-            font-size: 13px;
-            font-weight: 600;
-            color: #222222;
-        }
-
-        .selected-section {
-            max-width: 1140px;
-            margin: 0 auto 90px;
-            padding: 0 24px;
-            box-sizing: border-box;
-        }
-
-        .section-heading-wrap {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            margin-bottom: 28px;
-            border-bottom: 1px solid #e5e5e5;
-            padding-bottom: 14px;
-        }
-
-        .section-title {
-            font-size: 24px;
-            font-weight: 800;
-            margin: 0;
-            color: #000000;
-        }
-
-        .section-counter {
-            font-size: 13px;
-            font-weight: 700;
-            color: #777777;
-        }
-
-        .works-duo-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 28px;
-        }
-
-        .work-card {
-            background: #ffffff;
-            border: 1px solid #e5e5e5;
-            border-radius: 20px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            text-decoration: none;
-            color: inherit;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .work-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
-            color: inherit;
-        }
-
-        .work-img-box {
-            width: 100%;
-            height: 280px;
-            background: #eeeeee;
-            overflow: hidden;
-        }
-
-        .work-img-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.4s ease;
-            display: block;
-        }
-
-        .work-card:hover .work-img-box img {
-            transform: scale(1.04);
-        }
-
-        .work-info {
-            padding: 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .work-cat {
-            font-size: 11px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: #777777;
-        }
-
-        .work-title {
-            font-size: 22px;
-            font-weight: 800;
-            color: #000000;
-            margin: 0;
-        }
-
-        .work-desc {
-            font-size: 14px;
-            color: #555555;
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        .home-contact {
-            max-width: 1140px;
-            margin: 0 auto 100px;
-            padding: 0 24px;
-            box-sizing: border-box;
-        }
-
-        .contact-box {
-            background: #000000;
-            color: #ffffff;
-            border-radius: 24px;
-            padding: 50px 36px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 28px;
-            flex-wrap: wrap;
-        }
-
-        .contact-box h3 {
-            font-size: clamp(26px, 3.5vw, 38px);
-            font-weight: 800;
-            margin: 0 0 8px;
-            line-height: 1.1;
-        }
-
-        .contact-box p {
-            color: #aaaaaa;
-            margin: 0;
-            font-size: 15px;
-        }
-
-        @media (max-width: 860px) {
-            .home-hero {
-                padding: 45px 16px 35px;
-            }
-
-            .works-duo-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .work-img-box {
-                height: 220px;
-            }
-
-            .contact-box {
-                padding: 35px 24px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <!-- Navbar -->
-    <section class="nav-homepage">
+<!DOCTYPE html><html lang="it"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Alessandro Schiano — Graphic & Visual Designer. Brand identity, streetwear, visual culture and digital experiences."><title>Alessandro Schiano — Graphic & Visual Designer</title><link rel="stylesheet" href="../css/fonts.css"><link rel="stylesheet" href="../css/global.css"><link rel="stylesheet" href="../css/homepage.css"><link rel="stylesheet" href="../css/future.css"></head><body class="future-home"><a class="skip-link" href="#main-content" data-i18n="extra_3">Vai al contenuto</a><section class="nav-homepage">
         <nav class="navbar">
             <div class="container">
                 <a class="navbar-brand" href="homepage.html">
@@ -341,82 +17,60 @@
                 <div class="navbar-links">
                     <ul class="nav-list">
                         <li><a href="homepage.html" id="homepage-click" data-i18n="nav_home">Homepage</a></li>
-                        <li><a href="works.html" id="works-click" data-i18n="nav_works">Works</a></li>
-                        <li><a href="aboutme.html" id="aboutme-click" data-i18n="nav_about">About Me</a></li>
+                        <li><a href="works.html" id="works-click" data-i18n="nav_works">Progetti</a></li>
+                        <li><a href="aboutme.html" id="aboutme-click" data-i18n="nav_about">Chi Sono</a></li>
                         <li>
                             <div class="lang-switcher">
-                                <button class="lang-btn active" data-lang="en">EN</button>
-                                <span class="lang-separator">|</span>
-                                <button class="lang-btn" data-lang="it">IT</button>
+                                <button class="lang-btn active" data-lang="it">IT</button><span class="lang-separator">|</span><button class="lang-btn" data-lang="en">EN</button>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    </section>
-
-    <!-- Main Hero -->
-    <section class="home-hero">
-        <div class="hero-badge-wrap">
-            <div class="status-badge">
-                <span class="status-dot"></span>
-                <span data-i18n="home_status">Available for branding & visual projects</span>
-            </div>
-        </div>
-
-        <h1 class="hero-headline">
-            Alessandro Schiano
-            <span data-i18n="home_tagline">Graphic & Visual Designer</span>
-        </h1>
-
-        <p class="hero-bio" data-i18n="home_intro">
-            Shaping bold visual identities, streetwear culture, textile print files, and digital aesthetics. Focused on singular creative execution and clean brand narratives.
-        </p>
-
-        <div class="hero-actions">
-            <a href="works.html" class="btn-main">
-                <span data-i18n="home_cta_works">Explore Selected Works</span>
-                <i class="fi fi-rr-arrow-right"></i>
-            </a>
-            <!-- Link diretto all'ancora #my-journey -->
-            <a href="aboutme.html#my-journey" class="btn-alt">
-                <span data-i18n="home_cta_about">Read My Story</span>
-                <i class="fi fi-rr-user"></i>
-            </a>
-        </div>
-    </section>
-
+    </section><main id="main-content">
+<section class="future-hero">
+  <div class="hero-topline"><span data-i18n="extra_4">DESIGNER INDIPENDENTE / NAPOLI, IT</span><span data-i18n="extra_5">ESPLORAZIONI VISIVE — PORTFOLIO</span></div>
+  <div class="future-grid">
+    <div class="future-copy">
+      <div class="future-eyebrow"><span class="signal-dot"></span><span data-i18n="home_status">Disponibile per progetti di branding e visual design</span></div>
+      <h1>Alessandro<br><span>Schiano</span><sup>↗</sup></h1>
+      <p class="future-role" data-i18n="home_tagline">Graphic & Visual Designer</p>
+      <p class="future-bio" data-i18n="home_intro">Creo identità visive incisive, cultura streetwear, file di stampa tessile ed estetica digitale contemporanea. Focus sulla precisione esecutiva e narrazioni visive pulite.</p>
+      <div class="future-actions"><a class="future-button" href="#selected"><span data-i18n="home_cta_works">Scopri i Progetti</span><span aria-hidden="true">↗</span></a><a class="future-text-link" href="aboutme.html#my-journey" data-i18n="home_cta_about">La Mia Storia</a><a class="future-text-link" href="../documents/alessandro-schiano-cv-2026.pdf" download data-i18n="extra_42">Scarica CV · PDF</a></div>
+    </div>
+    <div class="orbital-stage map-stage"><div class="orbital-grid" aria-hidden="true"></div><span class="stage-label" data-i18n="extra_11">AS / ESPLORAZIONI GLOBALI</span><canvas id="tech-globe" tabindex="0" role="img" aria-label="Globo terrestre interattivo. Trascina o usa le frecce per ruotare. Usa il pulsante Explore per selezionare le città."></canvas><span class="map-hint" data-i18n="extra_12">TRASCINA PER ESPLORARE ↔</span><div class="map-controls"><button class="map-toggle" type="button" aria-label="Attiva o metti in pausa la rotazione">Ⅱ PAUSE</button><button class="map-city" type="button" aria-label="Esplora la città successiva" data-i18n="extra_13">ESPLORA ↗</button><button class="map-reset" type="button" aria-label="Torna alla vista iniziale" data-i18n="extra_14">RIPRISTINA ↺</button></div><span class="map-location" aria-live="polite"></span></div>
+  </div>
+  <div class="hero-bottomline"><span data-i18n="extra_6">IDENTITÀ DI BRAND. ESPERIENZE DIGITALI. CULTURA VISIVA.</span><a href="#selected" data-i18n="extra_7">SCORRI PER ESPLORARE ↓</a></div>
+</section>
     <!-- Core Pillars Bar -->
     <section class="core-bar-section">
         <div class="core-bar">
-            <span class="core-bar-label" data-i18n="home_pillars_label">Core Disciplines:</span>
+            <span class="core-bar-label" data-i18n="home_pillars_label">Discipline Chiave:</span>
             <span class="core-tag" data-i18n="home_pillar_1">Streetwear & Merchandising</span>
-            <span class="core-tag" data-i18n="home_pillar_2">Brand Identity Systems</span>
-            <span class="core-tag" data-i18n="home_pillar_3">Music Cover Artworks</span>
-            <span class="core-tag" data-i18n="home_pillar_4">UI & Frontend Code</span>
+            <span class="core-tag" data-i18n="home_pillar_2">Sistemi di Brand Identity</span>
+            <span class="core-tag" data-i18n="home_pillar_3">Cover Art Musicali</span>
+            <span class="core-tag" data-i18n="home_pillar_4">UI & Sviluppo Frontend</span>
         </div>
     </section>
 
     <!-- Selected Works Preview -->
-    <section class="selected-section">
+    <section class="selected-section" id="selected">
         <div class="section-heading-wrap">
-            <h2 class="section-title" data-i18n="home_selected_title">Featured Projects</h2>
-            <span class="section-counter">01 / 02</span>
+            <h2 class="section-title" data-i18n="home_selected_title">Progetti in Evidenza</h2>
+            <span class="section-counter" data-i18n="extra_8">IN EVIDENZA / 02</span>
         </div>
 
         <div class="works-duo-grid">
-            <!-- Project 1: Exxxplicit -->
-            <a href="exxxplicit.html" class="work-card">
+            <!-- Project 1: TapTap -->
+            <a href="taptap.html" class="work-card">
                 <div class="work-img-box">
-                    <img src="../img/exxxplicit1.webp" alt="Exxxplicit Project" loading="lazy">
+                    <img src="../img/taptap1.jpg.jpg" alt="TapTap — Brand Identity" loading="lazy">
                 </div>
                 <div class="work-info">
-                    <span class="work-cat" data-i18n="home_card_1_cat">Brand Identity & Apparel</span>
-                    <h3 class="work-title">Exxxplicit</h3>
-                    <p class="work-desc" data-i18n="home_card_1_desc">
-                        A raw streetwear brand identity mixing extreme emotions and sexuality into a cult aesthetic with recurring sold-out drops.
-                    </p>
+                    <span class="work-cat" data-i18n="home_card_1_cat">Brand Identity & Ecosistema NFC</span>
+                    <h3 class="work-title">TapTap</h3>
+                    <p class="work-desc" data-i18n="home_card_1_desc">Identità visiva, sistema di logo e linee guida per un ecosistema NFC che connette punti di contatto fisici a esperienze digitali.</p>
                 </div>
             </a>
 
@@ -426,11 +80,9 @@
                     <img src="../img/branding1.webp" alt="Tokko Project" loading="lazy">
                 </div>
                 <div class="work-info">
-                    <span class="work-cat" data-i18n="home_card_2_cat">Visual Identity & Packaging</span>
+                    <span class="work-cat" data-i18n="home_card_2_cat">Identità Visiva & Packaging</span>
                     <h3 class="work-title">Tokko</h3>
-                    <p class="work-desc" data-i18n="home_card_2_desc">
-                        Contemporary gourmet identity with strong typographic harmony, custom packaging, and balanced modern layouts.
-                    </p>
+                    <p class="work-desc" data-i18n="home_card_2_desc">Identità gourmet contemporanea con forte equilibrio tipografico, packaging su misura e impaginazione minimalista.</p>
                 </div>
             </a>
         </div>
@@ -440,24 +92,14 @@
     <section class="home-contact">
         <div class="contact-box">
             <div>
-                <h3 data-i18n="home_contact_heading">Let's build something authentic.</h3>
-                <p data-i18n="home_contact_sub">Have an upcoming project, clothing drop, or visual identity to craft?</p>
+                <h3 data-i18n="home_contact_heading">Costruiamo qualcosa di autentico.</h3>
+                <p data-i18n="home_contact_sub">Hai un progetto, un lancio abbigliamento o un'identità visiva da sviluppare?</p>
             </div>
             <a href="mailto:schianoski98@gmail.com" class="btn-alt" style="border: none;">
-                <span data-i18n="home_contact_btn">Get in Touch</span>
+                <span data-i18n="home_contact_btn">Contattami</span>
                 <i class="fi fi-rr-envelope"></i>
             </a>
         </div>
     </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-    <!-- Scripts JS -->
-    <script src="../js/translations.js"></script>
-    <script src="../js/homepage.js"></script>
-</body>
-
-</html>
+</main><footer class="future-footer"><a href="homepage.html">ALESSANDRO SCHIANO</a><span>GRAPHIC & VISUAL DESIGN</span><a href="mailto:schianoski98@gmail.com" data-i18n="extra_9">PARLIAMONE ↗</a><a href="#" class="back-top" data-i18n="extra_10">TORNA SU ↑</a></footer><script src="../js/translations.js"></script><script src="../js/world-map.js"></script><script src="../js/future.js"></script></body></html>

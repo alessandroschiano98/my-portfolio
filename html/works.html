@@ -7,15 +7,16 @@
   <!-- ! FONTS CSS -->
   <link rel="stylesheet" href="../css/fonts.css">
   <!-- ! Link CSS -->
-  <link rel="stylesheet" href="/css/global.css">
-  <link rel="stylesheet" href="/css/homepage.css">
-  <link rel="stylesheet" href="/css/works.css">
-  <link rel="stylesheet" href="/css/aboutme.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/homepage.css">
+  <link rel="stylesheet" href="../css/works.css">
+  <link rel="stylesheet" href="../css/aboutme.css">
   <!-- ! Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <title>Works — Alessandro Schiano</title>
+<link rel="stylesheet" href="../css/future.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
     <nav class="navbar">
       <div class="container">
         <a class="navbar-brand" href="homepage.html">
-          <img src="/img/logo.png" alt="Logo" class="logo">
+          <img src="../img/logo.png" alt="Logo" class="logo">
         </a>
         <label class="hamburger">
           <input type="checkbox" id="hamburger-checkbox" />
@@ -37,10 +38,10 @@
 
         <div class="navbar-links">
           <ul class="nav-list">
-            <li><a href="#" id="homepage-click">Homepage</a></li>
-            <li><a href="#" id="works-click">Works</a></li>
-            <li><a href="#" id="aboutme-click">About Me</a></li>
-          </ul>
+            <li><a href="#" id="homepage-click" data-i18n="extra_0">Homepage</a></li>
+            <li><a href="#" id="works-click" data-i18n="extra_1">Progetti</a></li>
+            <li><a href="#" id="aboutme-click" data-i18n="extra_2">Chi sono</a></li>
+          <li><div class="lang-switcher"><button class="lang-btn active" data-lang="it" type="button">IT</button><span class="lang-separator">|</span><button class="lang-btn" data-lang="en" type="button">EN</button></div></li></ul>
         </div>
       </div>
     </nav>
@@ -48,20 +49,17 @@
 
   <!-- ! INTRO HEADER -->
   <section class="worksIntro fade-in">
-    <span class="works-badge">Graphic & Visual Portfolio</span>
-    <h1>Visual Identity & Art Direction</h1>
-    <p class="works-description">
-      Specialized in crafting brand identities, editorial visuals, and impactful aesthetics. 
-      Web development is my added value to translate visual concepts into functional interfaces.
-    </p>
+    <span class="works-badge" data-i18n="extra_15">Portfolio di grafica e visual design</span>
+    <h1 data-i18n="extra_16">Identità visiva &amp; Direzione artistica</h1>
+    <p class="works-description" data-i18n="extra_17">Creo identità di brand, visual editoriali ed estetiche di impatto. Lo sviluppo web è il mio valore aggiunto per trasformare i concetti visivi in interfacce funzionali.</p>
   </section>
 
   <!-- ! 1. BRANDING WORKS (CORE FOCUS) -->
   <section class="webWorks branding-section fade-in">
     <div class="section-header">
-      <span class="sub-badge">Featured Case Studies</span>
-      <h2>Brand Identity & Direction</h2>
-      <p class="section-desc">Comprehensive identity systems designed with careful attention to typography, storytelling, and visual consistency.</p>
+      <span class="sub-badge" data-i18n="extra_18">Progetti in evidenza</span>
+      <h2 data-i18n="extra_19">Identità di brand &amp; Direzione artistica</h2>
+      <p class="section-desc" data-i18n="extra_20">Sistemi di identità completi, con attenzione alla tipografia, alla narrazione e alla coerenza visiva.</p>
     </div>
 
     <div class="projectsGrid branding-grid">
@@ -69,16 +67,14 @@
       <!-- ! TAPTAP -->
       <div class="projectCard highlight branding-card">
         <div class="projectImageWrap">
-          <img src="/img/taptap1.jpg" alt="Taptap Brand Identity Preview" loading="lazy">
+          <img src="../img/taptap1.jpg.jpg" alt="Taptap Brand Identity Preview" loading="lazy">
         </div>
         <div class="projectContent">
           <h3>Taptap</h3>
-          <p>
-            Complete visual identity, logo design system, and brand guidelines for an NFC-driven ecosystem connecting everyday physical touchpoints to instant digital interactions.
-          </p>
+          <p data-i18n="extra_21">Identità visiva completa, sistema di logo e linee guida per un ecosistema NFC che collega i punti di contatto fisici a interazioni digitali immediate.</p>
           <p class="tech">Brand Identity • Art Direction • NFC Ecosystem • Visual Strategy</p>
           <div class="buttons">
-            <a href="taptap.html" class="btn primary">View Case Study</a>
+            <a href="taptap.html" class="btn primary" data-i18n="extra_24">Scopri il progetto</a>
           </div>
         </div>
       </div>
@@ -86,17 +82,14 @@
       <!-- ! TOKKO -->
       <div class="projectCard highlight branding-card">
         <div class="projectImageWrap">
-          <img src="/img/branding1.webp" alt="Tokko Brand Identity Preview" loading="lazy">
+          <img src="../img/branding1.webp" alt="Tokko Brand Identity Preview" loading="lazy">
         </div>
         <div class="projectContent">
           <h3>TOKKO</h3>
-          <p>
-            Full brand identity, logo design guidelines, social media advertising campaigns, and mobile e-commerce UI
-            mockups for an Italian gourmet food brand.
-          </p>
+          <p data-i18n="extra_22">Identità di brand completa, linee guida del logo, campagne pubblicitarie social e mockup di interfacce e-commerce mobile per un marchio gourmet italiano.</p>
           <p class="tech">Brand Identity • Art Direction • Social Ads • Packaging</p>
           <div class="buttons">
-            <a href="tokko.html" class="btn primary">View Case Study</a>
+            <a href="tokko.html" class="btn primary" data-i18n="extra_24">Scopri il progetto</a>
           </div>
         </div>
       </div>
@@ -104,17 +97,14 @@
       <!-- ! EXXXPLICIT -->
       <div class="projectCard highlight branding-card">
         <div class="projectImageWrap">
-          <img src="/img/exxxplicit1.webp" alt="Exxxplicit Brand Identity Preview" loading="lazy">
+          <img src="../img/exxxplicit1.webp" alt="Exxxplicit Brand Identity Preview" loading="lazy">
         </div>
         <div class="projectContent">
           <h3>Exxxplicit</h3>
-          <p>
-            Complete visual identity project developed with attention to visual coherence, distinct tone of voice,
-            typography system, and brand aesthetic.
-          </p>
+          <p data-i18n="extra_23">Progetto completo di identità visiva, con attenzione alla coerenza, al tono di voce, al sistema tipografico e all’estetica del brand.</p>
           <p class="tech">Visual Identity • Logo Design • Typography • Merchandising</p>
           <div class="buttons">
-            <a href="exxxplicit.html" class="btn primary">View Case Study</a>
+            <a href="exxxplicit.html" class="btn primary" data-i18n="extra_24">Scopri il progetto</a>
           </div>
         </div>
       </div>
@@ -125,42 +115,42 @@
   <!-- ! 2. VISUAL WORKS GALLERY -->
   <section class="visualWorks fade-in">
     <div class="section-header">
-      <span class="sub-badge">Artworks & Posters</span>
-      <h2>Visual Showcase</h2>
-      <p class="section-desc">A curated selection of poster designs, editorial explorations, and visual arts.</p>
+      <span class="sub-badge" data-i18n="extra_25">Artwork &amp; Poster</span>
+      <h2 data-i18n="extra_26">Galleria visiva</h2>
+      <p class="section-desc" data-i18n="extra_27">Una selezione di poster, sperimentazioni editoriali e arti visive.</p>
       <p class="tech-tools">Adobe Photoshop • Adobe Illustrator • Adobe Premiere • Blender</p>
     </div>
 
     <div class="visualGrid">
       <div class="visualCard">
-        <img src="/img/grafica1.webp" alt="Grafica1" class="clickable-img" loading="lazy">
+        <img src="../img/grafica1.webp" alt="Grafica1" class="clickable-img" loading="lazy">
       </div>
       <div class="visualCard">
-        <img src="/img/grafica2.webp" alt="Grafica2" class="clickable-img" loading="lazy">
+        <img src="../img/grafica2.webp" alt="Grafica2" class="clickable-img" loading="lazy">
       </div>
       <div class="visualCard">
-        <img src="/img/grafica3.webp" alt="Grafica3" class="clickable-img" loading="lazy">
+        <img src="../img/grafica3.webp" alt="Grafica3" class="clickable-img" loading="lazy">
       </div>
       <div class="visualCard">
-        <img src="/img/grafica4.webp" alt="Grafica4" class="clickable-img" loading="lazy">
+        <img src="../img/grafica4.webp" alt="Grafica4" class="clickable-img" loading="lazy">
       </div>
       <div class="visualCard">
-        <img src="/img/grafica5.webp" alt="Grafica5" class="clickable-img" loading="lazy">
+        <img src="../img/grafica5.webp" alt="Grafica5" class="clickable-img" loading="lazy">
       </div>
       <div class="visualCard">
-        <img src="/img/poster1.webp" alt="Poster1" class="clickable-img" loading="lazy">
+        <img src="../img/poster1.webp" alt="Poster1" class="clickable-img" loading="lazy">
       </div>
       <div class="visualCard">
-        <img src="/img/poster2.webp" alt="Poster2" class="clickable-img" loading="lazy">
+        <img src="../img/poster2.webp" alt="Poster2" class="clickable-img" loading="lazy">
       </div>
       <div class="visualCard">
-        <img src="/img/poster3.webp" alt="Poster3" class="clickable-img" loading="lazy">
+        <img src="../img/poster3.webp" alt="Poster3" class="clickable-img" loading="lazy">
       </div>
       <div class="visualCard">
-        <img src="/img/poster4.webp" alt="Poster4" class="clickable-img" loading="lazy">
+        <img src="../img/poster4.webp" alt="Poster4" class="clickable-img" loading="lazy">
       </div>
       <div class="visualCard">
-        <img src="/img/poster5.webp" alt="Poster5" class="clickable-img" loading="lazy">
+        <img src="../img/poster5.webp" alt="Poster5" class="clickable-img" loading="lazy">
       </div>
     </div>
   </section>
@@ -173,9 +163,9 @@
   <!-- ! 3. WEB PROJECTS (EXTRA DEV SKILLSET) -->
   <section class="webWorks extra-dev-section fade-in">
     <div class="section-header">
-      <span class="sub-badge dev-badge">Secondary / Extra Skillset</span>
-      <h2>Interactive & Web Builds</h2>
-      <p class="section-desc">Frontend implementations developed to give interactive life to design layouts.</p>
+      <span class="sub-badge dev-badge" data-i18n="extra_28">Competenze complementari</span>
+      <h2 data-i18n="extra_29">Progetti interattivi &amp; Sviluppo web</h2>
+      <p class="section-desc" data-i18n="extra_30">Progetti frontend sviluppati per dare vita e interattività ai layout grafici.</p>
     </div>
 
     <div class="projectsGrid">
@@ -183,40 +173,17 @@
       <!-- ! MyPortfolio -->
       <div class="projectCard">
         <div class="projectImageWrap webWrap">
-          <img src="/img/logo.png" alt="Anteprima portfolio" loading="lazy">
+          <img src="../img/logo.png" alt="Anteprima portfolio" loading="lazy">
         </div>
         <div class="projectContent">
           <h3>MyPortfolio</h3>
-          <p>
-            Development of my personal portfolio, focused on UI/UX, smooth animations, and responsive design.
-          </p>
+          <p data-i18n="extra_31">Sviluppo del mio portfolio personale, con attenzione a UI/UX, animazioni fluide e design responsive.</p>
           <p class="tech">HTML • CSS • JavaScript • Bootstrap</p>
           <div class="buttons">
             <a href="https://github.com/alessandroschiano98/my-portfolio" class="btn secondary" target="_blank"
               rel="noopener noreferrer">GitHub</a>
             <a href="https://alessandroschiano.altervista.org/" class="btn secondary" target="_blank"
-              rel="noopener noreferrer">Website</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- ! MyTravels -->
-      <div class="projectCard">
-        <div class="projectImageWrap webWrap">
-          <img src="/img/travellogo.png" alt="Anteprima mytravel" loading="lazy">
-        </div>
-        <div class="projectContent">
-          <h3>MyTravels</h3>
-          <p>
-            Development of a personal travel page, focused on visual storytelling, clean design, and a smooth,
-            responsive user experience.
-          </p>
-          <p class="tech">HTML • CSS • JavaScript • Bootstrap</p>
-          <div class="buttons">
-            <a href="https://github.com/alessandroschiano98/my-travels" class="btn secondary" target="_blank"
-              rel="noopener noreferrer">GitHub</a>
-            <a href="https://travels.altervista.org" class="btn secondary" target="_blank"
-              rel="noopener noreferrer">Website</a>
+              rel="noopener noreferrer" data-i18n="extra_33">Sito web</a>
           </div>
         </div>
       </div>
@@ -224,20 +191,17 @@
       <!-- ! MyCineteca -->
       <div class="projectCard">
         <div class="projectImageWrap webWrap">
-          <img src="/img/logo-mycineteca.png" alt="Anteprima mycineteca" loading="lazy">
+          <img src="../img/logo-mycineteca.png" alt="Anteprima mycineteca" loading="lazy">
         </div>
         <div class="projectContent">
           <h3>MyCineteca</h3>
-          <p>
-            A personal movie catalog built with a focus on visual storytelling, clean UI, and a smooth, fully responsive
-            user experience. Designed to showcase curated films divided by genre with an intuitive browsing flow.
-          </p>
+          <p data-i18n="extra_32">Un catalogo cinematografico personale basato sulla narrazione visiva, un’interfaccia pulita e un’esperienza fluida e responsive. I film sono suddivisi per genere per una navigazione intuitiva.</p>
           <p class="tech">HTML • CSS • JavaScript • Bootstrap • React</p>
           <div class="buttons">
             <a href="https://github.com/alessandroschiano98/my-cineteca" class="btn secondary" target="_blank"
               rel="noopener noreferrer">GitHub</a>
             <a href="https://my-cineteca.vercel.app/" class="btn secondary" target="_blank"
-              rel="noopener noreferrer">Website</a>
+              rel="noopener noreferrer" data-i18n="extra_33">Sito web</a>
           </div>
         </div>
       </div>
@@ -251,8 +215,9 @@
     crossorigin="anonymous"></script>
 
   <!-- ! Link JavaScript -->
-  <script src="/js/homepage.js"></script>
-  <script src="/js/works.js"></script>
+  <script src="../js/translations.js"></script><script src="../js/homepage.js"></script>
+  <script src="../js/works.js"></script>
+<footer class="future-footer"><a href="homepage.html">ALESSANDRO SCHIANO</a><span>GRAPHIC & VISUAL DESIGN</span><a href="mailto:schianoski98@gmail.com" data-i18n="extra_9">PARLIAMONE ↗</a><a href="#" class="back-top" data-i18n="extra_10">TORNA SU ↑</a></footer><script src="../js/future.js"></script>
 </body>
 
 </html>

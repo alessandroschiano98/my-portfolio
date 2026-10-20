@@ -16,6 +16,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <title>Exxxplicit — Branding Project</title>
+<link rel="stylesheet" href="../css/future.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
     <nav class="navbar">
       <div class="container">
         <a class="navbar-brand" href="homepage.html">
-          <img src="/img/logo.png" alt="Logo" class="logo">
+          <img src="../img/logo.png" alt="Logo" class="logo">
         </a>
         <label class="hamburger">
           <input type="checkbox" id="hamburger-checkbox" />
@@ -37,10 +38,10 @@
 
         <div class="navbar-links">
           <ul class="nav-list">
-            <li><a href="homepage.html">Homepage</a></li>
-            <li><a href="works.html">Works</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-          </ul>
+            <li><a href="homepage.html" data-i18n="extra_0">Homepage</a></li>
+            <li><a href="works.html" data-i18n="extra_1">Progetti</a></li>
+            <li><a href="aboutme.html" data-i18n="extra_2">Chi sono</a></li>
+          <li><div class="lang-switcher"><button class="lang-btn active" data-lang="it" type="button">IT</button><span class="lang-separator">|</span><button class="lang-btn" data-lang="en" type="button">EN</button></div></li></ul>
         </div>
       </div>
     </nav>
@@ -57,34 +58,34 @@
   </div>
 
   <section class="worksIntro fade-in">
-    <span class="works-badge">Brand Identity Case Study</span>
+    <span class="works-badge" data-i18n="extra_34">Progetto di identità di brand</span>
     <h1>Exxxplicit</h1>
-    <p class="works-description">A bold streetwear brand identity crafted with strong emphasis on visual consistency, raw typographic layout, merchandising mockups, and consistent art direction.</p>
+    <p class="works-description" data-i18n="extra_37">Un’identità streetwear d’impatto, con coerenza visiva, tipografia essenziale, mockup di merchandising e una direzione artistica riconoscibile.</p>
     <p class="tech-tools">Adobe Photoshop • Adobe Illustrator</p>
   </section>
 
   <section class="visualWorks fade-in">
     <div class="visualGrid">
       <div class="visualCard">
-        <img src="/img/exxxplicit1.webp" alt="Exxxplicit 1" class="clickable-img" loading="lazy">
+        <img src="../img/exxxplicit1.webp" alt="Exxxplicit 1" class="clickable-img" loading="lazy">
       </div>
       <div class="visualCard">
-        <img src="/img/exxxplicit2.webp" alt="Exxxplicit 2" class="clickable-img" loading="lazy">
+        <img src="../img/exxxplicit2.webp" alt="Exxxplicit 2" class="clickable-img" loading="lazy">
       </div>
       <div class="visualCard">
-        <img src="/img/exxxplicit3.webp" alt="Exxxplicit 3" class="clickable-img" loading="lazy">
+        <img src="../img/exxxplicit3.webp" alt="Exxxplicit 3" class="clickable-img" loading="lazy">
       </div>
       <div class="visualCard">
-        <img src="/img/exxxplicit4.webp" alt="Exxxplicit 4" class="clickable-img" loading="lazy">
+        <img src="../img/exxxplicit4.webp" alt="Exxxplicit 4" class="clickable-img" loading="lazy">
       </div>
       <div class="visualCard">
-        <img src="/img/exxxplicit5.webp" alt="Exxxplicit 5" class="clickable-img" loading="lazy">
+        <img src="../img/exxxplicit5.webp" alt="Exxxplicit 5" class="clickable-img" loading="lazy">
       </div>
       <div class="visualCard">
-        <img src="/img/exxxplicit6.webp" alt="Exxxplicit 6" class="clickable-img" loading="lazy">
+        <img src="../img/exxxplicit6.webp" alt="Exxxplicit 6" class="clickable-img" loading="lazy">
       </div>
       <div class="visualCard">
-        <img src="/img/exxxplicit7.webp" alt="Exxxplicit 7" class="clickable-img" loading="lazy">
+        <img src="../img/exxxplicit7.webp" alt="Exxxplicit 7" class="clickable-img" loading="lazy">
       </div>
     </div>
   </section>
@@ -99,8 +100,9 @@
     crossorigin="anonymous"></script>
 
   <!-- ! Link JavaScript -->
-  <script src="/js/homepage.js"></script>
-  <script src="/js/works.js"></script>
+  <script src="../js/translations.js"></script><script src="../js/homepage.js"></script>
+  <script src="../js/works.js"></script>
+<footer class="future-footer"><a href="homepage.html">ALESSANDRO SCHIANO</a><span>GRAPHIC & VISUAL DESIGN</span><a href="mailto:schianoski98@gmail.com" data-i18n="extra_9">PARLIAMONE ↗</a><a href="#" class="back-top" data-i18n="extra_10">TORNA SU ↑</a></footer><script src="../js/future.js"></script>
 </body>
 
 </html>

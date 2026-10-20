@@ -17,8 +17,8 @@ const translations = {
       home_pillar_3: "Music Cover Artworks",
       home_pillar_4: "UI & Frontend Code",
       home_selected_title: "Featured Projects",
-      home_card_1_cat: "Brand Identity & Apparel",
-      home_card_1_desc: "A raw streetwear brand identity mixing extreme emotions and sexuality into a cult aesthetic with recurring sold-out drops.",
+      home_card_1_cat: "Brand Identity & NFC Ecosystem",
+      home_card_1_desc: "Visual identity, logo system and brand guidelines for an NFC ecosystem connecting physical touchpoints to digital experiences.",
       home_card_2_cat: "Visual Identity & Packaging",
       home_card_2_desc: "Contemporary gourmet identity with strong typographic harmony, custom packaging, and balanced modern layouts.",
       home_contact_heading: "Let's build something authentic.",
@@ -123,8 +123,8 @@ const translations = {
       home_pillar_3: "Cover Art Musicali",
       home_pillar_4: "UI & Sviluppo Frontend",
       home_selected_title: "Progetti in Evidenza",
-      home_card_1_cat: "Brand Identity & Moda",
-      home_card_1_desc: "Un brand streetwear viscerale che ha unito passione estrema e sensualità in un'estetica cult con drop sempre sold-out.",
+      home_card_1_cat: "Brand Identity & Ecosistema NFC",
+      home_card_1_desc: "Identità visiva, sistema di logo e linee guida per un ecosistema NFC che connette punti di contatto fisici a esperienze digitali.",
       home_card_2_cat: "Identità Visiva & Packaging",
       home_card_2_desc: "Identità gourmet contemporanea con forte equilibrio tipografico, packaging su misura e impaginazione minimalista.",
       home_contact_heading: "Costruiamo qualcosa di autentico.",
@@ -212,9 +212,13 @@ const translations = {
     }
   };
   
+
+Object.assign(translations.it, {"extra_0": "Homepage", "extra_1": "Progetti", "extra_2": "Chi sono", "extra_3": "Vai al contenuto", "extra_4": "DESIGNER INDIPENDENTE / NAPOLI, IT", "extra_5": "ESPLORAZIONI VISIVE — PORTFOLIO", "extra_6": "IDENTITÀ DI BRAND. ESPERIENZE DIGITALI. CULTURA VISIVA.", "extra_7": "SCORRI PER ESPLORARE ↓", "extra_8": "IN EVIDENZA / 02", "extra_9": "PARLIAMONE ↗", "extra_10": "TORNA SU ↑", "extra_11": "AS / ESPLORAZIONI GLOBALI", "extra_12": "TRASCINA PER ESPLORARE ↔", "extra_13": "ESPLORA ↗", "extra_14": "RIPRISTINA ↺", "extra_15": "Portfolio di grafica e visual design", "extra_16": "Identità visiva & Direzione artistica", "extra_17": "Creo identità di brand, visual editoriali ed estetiche di impatto. Lo sviluppo web è il mio valore aggiunto per trasformare i concetti visivi in interfacce funzionali.", "extra_18": "Progetti in evidenza", "extra_19": "Identità di brand & Direzione artistica", "extra_20": "Sistemi di identità completi, con attenzione alla tipografia, alla narrazione e alla coerenza visiva.", "extra_21": "Identità visiva completa, sistema di logo e linee guida per un ecosistema NFC che collega i punti di contatto fisici a interazioni digitali immediate.", "extra_22": "Identità di brand completa, linee guida del logo, campagne pubblicitarie social e mockup di interfacce e-commerce mobile per un marchio gourmet italiano.", "extra_23": "Progetto completo di identità visiva, con attenzione alla coerenza, al tono di voce, al sistema tipografico e all’estetica del brand.", "extra_24": "Scopri il progetto", "extra_25": "Artwork & Poster", "extra_26": "Galleria visiva", "extra_27": "Una selezione di poster, sperimentazioni editoriali e arti visive.", "extra_28": "Competenze complementari", "extra_29": "Progetti interattivi & Sviluppo web", "extra_30": "Progetti frontend sviluppati per dare vita e interattività ai layout grafici.", "extra_31": "Sviluppo del mio portfolio personale, con attenzione a UI/UX, animazioni fluide e design responsive.", "extra_32": "Un catalogo cinematografico personale basato sulla narrazione visiva, un’interfaccia pulita e un’esperienza fluida e responsive. I film sono suddivisi per genere per una navigazione intuitiva.", "extra_33": "Sito web", "extra_34": "Progetto di identità di brand", "extra_35": "Un sistema completo di identità di brand per un ecosistema contactless basato sulla tecnologia NFC. Semplicità, connessione diretta ed estetica minimale uniscono le interazioni fisiche alle esperienze digitali.", "extra_36": "Un progetto di identità di brand basato su coerenza visiva, tipografia personalizzata, packaging ed estetica gourmet contemporanea.", "extra_37": "Un’identità streetwear d’impatto, con coerenza visiva, tipografia essenziale, mockup di merchandising e una direzione artistica riconoscibile.", "extra_38": "Torna ai progetti", "extra_39": "Curriculum & Certificati", "extra_40": "Il mio percorso professionale, da approfondire.", "extra_41": "Scarica il mio CV", "extra_42": "Scarica CV · PDF", "extra_43": "CV aggiornato e certificati originali del mio percorso formativo.", "extra_44": "Apri certificato ↗", "extra_45": "Scarica PDF ↓", "extra_46": "Photoshop · Visual Designer", "extra_47": "Corso di grafica", "extra_48": "Certificato di stage", "extra_49": "Inglese · B1", "extra_50": "Apri CV ↗"});
+Object.assign(translations.en, {"extra_0": "Homepage", "extra_1": "Works", "extra_2": "About Me", "extra_3": "Skip to content", "extra_4": "INDEPENDENT DESIGNER / NAPLES, IT", "extra_5": "VISUAL EXPLORATIONS — PORTFOLIO", "extra_6": "BRAND IDENTITIES. DIGITAL EXPERIENCES. VISUAL CULTURE.", "extra_7": "SCROLL TO EXPLORE ↓", "extra_8": "SELECTED / 02", "extra_9": "LET’S TALK ↗", "extra_10": "BACK TO TOP ↑", "extra_11": "AS / WORLD EXPLORER", "extra_12": "DRAG TO EXPLORE ↔", "extra_13": "EXPLORE ↗", "extra_14": "RESET ↺", "extra_15": "Graphic & Visual Portfolio", "extra_16": "Visual Identity & Art Direction", "extra_17": "Specialized in crafting brand identities, editorial visuals, and impactful aesthetics. Web development is my added value to translate visual concepts into functional interfaces.", "extra_18": "Featured Case Studies", "extra_19": "Brand Identity & Direction", "extra_20": "Comprehensive identity systems designed with careful attention to typography, storytelling, and visual consistency.", "extra_21": "Complete visual identity, logo design system, and brand guidelines for an NFC-driven ecosystem connecting everyday physical touchpoints to instant digital interactions.", "extra_22": "Full brand identity, logo design guidelines, social media advertising campaigns, and mobile e-commerce UI mockups for an Italian gourmet food brand.", "extra_23": "Complete visual identity project developed with attention to visual coherence, distinct tone of voice, typography system, and brand aesthetic.", "extra_24": "View Case Study", "extra_25": "Artworks & Posters", "extra_26": "Visual Showcase", "extra_27": "A curated selection of poster designs, editorial explorations, and visual arts.", "extra_28": "Secondary / Extra Skillset", "extra_29": "Interactive & Web Builds", "extra_30": "Frontend implementations developed to give interactive life to design layouts.", "extra_31": "Development of my personal portfolio, focused on UI/UX, smooth animations, and responsive design.", "extra_32": "A personal movie catalog built with a focus on visual storytelling, clean UI, and a smooth, fully responsive user experience. Designed to showcase curated films divided by genre with an intuitive browsing flow.", "extra_33": "Website", "extra_34": "Brand Identity Case Study", "extra_35": "A comprehensive brand identity system designed for a contactless ecosystem powered by NFC technology. Built around simplicity, direct connectivity, and minimal aesthetics, bridging physical interactions with seamless digital experiences.", "extra_36": "A brand identity project developed with a focus on visual consistency, custom typography, packaging design, and contemporary gourmet aesthetics.", "extra_37": "A bold streetwear brand identity crafted with strong emphasis on visual consistency, raw typographic layout, merchandising mockups, and consistent art direction.", "extra_38": "Torna a Works", "extra_39": "Curriculum & Certificates", "extra_40": "My professional background, ready to explore.", "extra_41": "Download my CV", "extra_42": "Download CV · PDF", "extra_43": "Updated CV and original training certificates.", "extra_44": "View certificate ↗", "extra_45": "Download PDF ↓", "extra_46": "Photoshop · Visual Designer", "extra_47": "Graphic design course", "extra_48": "Internship certificate", "extra_49": "English · B1", "extra_50": "Open CV ↗"});
+
   function setLanguage(lang) {
-    const currentLang = translations[lang] ? lang : "en";
-    localStorage.setItem("portfolio_lang", currentLang);
+    const currentLang = translations[lang] ? lang : "it";
+    try { localStorage.setItem("portfolio_lang_v2", currentLang); } catch {}
   
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
@@ -232,10 +236,12 @@ const translations = {
     });
   
     document.documentElement.lang = currentLang;
+    document.dispatchEvent(new CustomEvent("portfolio-language-change"));
   }
   
   document.addEventListener("DOMContentLoaded", () => {
-    const savedLang = localStorage.getItem("portfolio_lang") || "en";
+    let savedLang = "it";
+    try { savedLang = localStorage.getItem("portfolio_lang_v2") || "it"; } catch {}
     setLanguage(savedLang);
   
     document.querySelectorAll(".lang-btn").forEach((btn) => {
