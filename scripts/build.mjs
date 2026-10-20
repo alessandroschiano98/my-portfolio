@@ -22,7 +22,7 @@ for(const source of sources){
  }
 }
 await fs.writeFile('src/data/assets.json',JSON.stringify(assets));
-await fs.copyFile('public/'+assets['../img/logo.png'].src,'public/favicon.webp');
+await sharp('public/'+assets['../img/logo.png'].src).negate({alpha:false}).webp().toFile('public/favicon-white.webp');
 await fs.copyFile('fonts/Gyroscope-Sans.woff2','public/fonts/Gyroscope-Sans.woff2');
 for(const file of await fs.readdir('documents'))if(file.endsWith('.pdf'))await fs.copyFile(`documents/${file}`,`public/documents/${file}`);
 if(process.argv.includes('--assets-only'))process.exit(0);
