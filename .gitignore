@@ -5,3 +5,6 @@ public/media/
 public/documents/
 public/fonts/
 *.zip
+
+# Local Cloudflare build state
+.wrangler/
