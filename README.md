@@ -32,3 +32,9 @@ La compilazione ottimizza le immagini originali in WebP, copia i PDF, include il
 - `scripts/build.mjs`: ottimizzazione immagini e compilazione.
 
 Il CV e i certificati sono pubblici nel sito compilato, come richiesto. La scelta della lingua viene salvata nel browser; il primo accesso parte in italiano.
+
+## Sfondo stellato interattivo
+
+Campo di stelle su canvas leggero, con livelli di profondità e un lieve parallasse al movimento del mouse e allo scorrimento. Non intercetta i clic. Rispetta la preferenza di riduzione animazioni e si ferma quando la scheda non è visibile. Nessuna texture o libreria 3D esterna.
+
+Backup prima delle prove spaziali: `D:/Blender_Cache/my-portfolio-backup-before-space-2026-10-21.zip`. Per ripristinarlo, estrarlo in una nuova cartella ed eseguire `npm ci` e `npm run build`.
