@@ -23,3 +23,5 @@
 [data-theme=dark] :is(a,button,canvas):focus-visible{outline-color:#c3c8cc}
 [data-theme=dark] ::selection{background:#efeeee;color:#101112}
 @media(max-width:768px){.theme-toggle{margin-left:14px;padding:9px}.theme-toggle span{display:none}.menu-toggle{margin-left:auto}[data-theme=dark] .react-menu.is-open{background:var(--paper);border-color:var(--line)}}
+
+[data-theme=dark] .web-image img{filter:grayscale(1) invert(1)}
