@@ -29,8 +29,9 @@ export default function Globe({lang,theme}){
    // Separate the dense European destinations into readable columns with leader lines.
    const fontSize=size<400?8:9,gap=fontSize+7,top=42,bottom=size*.84;
    ctx.font=`${fontSize}px monospace`;ctx.textBaseline='middle';
+   const leftLabels=new Set([...labels].sort((a,b)=>a.x-b.x||a.i-b.i).slice(0,Math.ceil(labels.length/2)));
    for(const side of [-1,1]){
-    const group=labels.filter(label=>(label.x<size/2?-1:1)===side).sort((a,b)=>a.y-b.y||a.i-b.i);
+    const group=labels.filter(label=>leftLabels.has(label)===(side===-1)).sort((a,b)=>a.y-b.y||a.i-b.i);
     let previous=top-gap;
     for(const label of group){label.ly=Math.max(label.y,previous+gap);previous=label.ly;}
     if(group.length&&previous>bottom){group[group.length-1].ly=bottom;for(let j=group.length-2;j>=0;j--)group[j].ly=Math.min(group[j].ly,group[j+1].ly-gap);}
@@ -58,5 +59,5 @@ export default function Globe({lang,theme}){
  },[]);
  useEffect(()=>actions.current.play?.(playing),[playing]);useEffect(()=>actions.current.draw?.(),[lang,theme]);
  const city=cities[selected],it=lang==='it';
- return <div className="orbital-stage map-stage"><div className="orbital-grid" aria-hidden="true"/><span className="stage-label">AS / {it?'15 PAESI VISITATI':'15 COUNTRIES VISITED'}</span><canvas ref={canvasRef} id="tech-globe" tabIndex="0" role="img" aria-label={it?'Globo interattivo con i nomi dei paesi visitati. Trascina o usa le frecce per ruotare.':'Interactive globe with visited country labels. Drag or use arrow keys to rotate.'}/><span className="map-hint">{it?'TRASCINA PER ESPLORARE':'DRAG TO EXPLORE'} ↔</span><div className="map-controls"><button className="map-toggle" type="button" aria-pressed={playing} onClick={()=>setPlaying(!playing)}>{playing?(it?'Ⅱ PAUSA':'Ⅱ PAUSE'):(it?'▷ RUOTA':'▷ ROTATE')}</button><button className="map-city" type="button" onClick={()=>actions.current.next?.()}>{it?'ESPLORA':'EXPLORE'} ↗</button><button className="map-reset" type="button" onClick={()=>actions.current.reset?.()}>{it?'RIPRISTINA':'RESET'} ↺</button></div><span className="map-location" aria-live="polite">{city.name[lang]} · {Math.abs(city.lat).toFixed(2)}°{city.lat<0?'S':'N'} / {Math.abs(city.lon).toFixed(2)}°{city.lon<0?'W':'E'}</span></div>;
+ return <div className="orbital-stage map-stage"><div className="orbital-grid" aria-hidden="true"/><span className="stage-label">AS / {cities.length-1} {it?'METE VISITATE':'PLACES VISITED'}</span><canvas ref={canvasRef} id="tech-globe" tabIndex="0" role="img" aria-label={it?'Globo interattivo con i nomi delle mete visitate. Trascina o usa le frecce per ruotare.':'Interactive globe with visited destination labels. Drag or use arrow keys to rotate.'}/><span className="map-hint">{it?'TRASCINA PER ESPLORARE':'DRAG TO EXPLORE'} ↔</span><div className="map-controls"><button className="map-toggle" type="button" aria-pressed={playing} onClick={()=>setPlaying(!playing)}>{playing?(it?'Ⅱ PAUSA':'Ⅱ PAUSE'):(it?'▷ RUOTA':'▷ ROTATE')}</button><button className="map-city" type="button" onClick={()=>actions.current.next?.()}>{it?'ESPLORA':'EXPLORE'} ↗</button><button className="map-reset" type="button" onClick={()=>actions.current.reset?.()}>{it?'RIPRISTINA':'RESET'} ↺</button></div><span className="map-location" aria-live="polite">{city.name[lang]} · {Math.abs(city.lat).toFixed(2)}°{city.lat<0?'S':'N'} / {Math.abs(city.lon).toFixed(2)}°{city.lon<0?'W':'E'}</span></div>;
 }

@@ -9,122 +9,202 @@
   },
   {
     "name": {
-      "it": "LITUANIA",
-      "en": "LITHUANIA"
+      "it": "VILNIUS",
+      "en": "VILNIUS"
     },
-    "lat": 55.17,
-    "lon": 23.88
+    "lat": 54.6872,
+    "lon": 25.2797
   },
   {
     "name": {
-      "it": "SPAGNA",
-      "en": "SPAIN"
+      "it": "BRUXELLES",
+      "en": "BRUSSELS"
     },
-    "lat": 40.46,
-    "lon": -3.75
+    "lat": 50.8503,
+    "lon": 4.3517
   },
   {
     "name": {
-      "it": "MESSICO",
-      "en": "MEXICO"
+      "it": "LIONE",
+      "en": "LYON"
     },
-    "lat": 23.63,
-    "lon": -102.55
+    "lat": 45.764,
+    "lon": 4.8357
   },
   {
     "name": {
-      "it": "STATI UNITI",
-      "en": "UNITED STATES"
+      "it": "KOTOR",
+      "en": "KOTOR"
     },
-    "lat": 25.76,
-    "lon": -80.19
+    "lat": 42.4247,
+    "lon": 18.7712
   },
   {
     "name": {
-      "it": "PORTOGALLO",
-      "en": "PORTUGAL"
+      "it": "SANTORINI",
+      "en": "SANTORINI"
     },
-    "lat": 39.4,
-    "lon": -8.22
+    "lat": 36.4,
+    "lon": 25.46
   },
   {
     "name": {
-      "it": "MAROCCO",
-      "en": "MOROCCO"
+      "it": "ROMA",
+      "en": "ROME"
     },
-    "lat": 31.79,
-    "lon": -7.09
+    "lat": 41.9028,
+    "lon": 12.4964
   },
   {
     "name": {
-      "it": "SVIZZERA",
-      "en": "SWITZERLAND"
+      "it": "VENEZIA",
+      "en": "VENICE"
     },
-    "lat": 46.82,
-    "lon": 8.23
+    "lat": 45.4408,
+    "lon": 12.3155
   },
   {
     "name": {
-      "it": "BELGIO",
-      "en": "BELGIUM"
+      "it": "MILANO",
+      "en": "MILAN"
     },
-    "lat": 50.5,
-    "lon": 4.47
+    "lat": 45.4642,
+    "lon": 9.19
   },
   {
     "name": {
-      "it": "FRANCIA",
-      "en": "FRANCE"
+      "it": "MARRAKECH",
+      "en": "MARRAKECH"
     },
-    "lat": 46.6,
-    "lon": 2.21
+    "lat": 31.6295,
+    "lon": -7.9811
   },
   {
     "name": {
-      "it": "REGNO UNITO",
-      "en": "UNITED KINGDOM"
+      "it": "MIAMI",
+      "en": "MIAMI"
     },
-    "lat": 55.38,
-    "lon": -3.44
+    "lat": 25.7617,
+    "lon": -80.1918
   },
   {
     "name": {
       "it": "SINGAPORE",
       "en": "SINGAPORE"
     },
-    "lat": 1.35,
-    "lon": 103.82
+    "lat": 1.3521,
+    "lon": 103.8198
   },
   {
     "name": {
-      "it": "GRECIA",
-      "en": "GREECE"
+      "it": "ISOLE GILI",
+      "en": "GILI ISLANDS"
     },
-    "lat": 39.07,
-    "lon": 21.82
+    "lat": -8.35,
+    "lon": 116.06
   },
   {
     "name": {
-      "it": "MONTENEGRO",
-      "en": "MONTENEGRO"
+      "it": "BALI",
+      "en": "BALI"
     },
-    "lat": 42.71,
-    "lon": 19.37
+    "lat": -8.4095,
+    "lon": 115.1889
   },
   {
     "name": {
-      "it": "ROMANIA",
-      "en": "ROMANIA"
+      "it": "PLAYA DEL CARMEN",
+      "en": "PLAYA DEL CARMEN"
     },
-    "lat": 45.94,
-    "lon": 24.97
+    "lat": 20.6296,
+    "lon": -87.0739
   },
   {
     "name": {
-      "it": "AUSTRIA",
-      "en": "AUSTRIA"
+      "it": "TENERIFE",
+      "en": "TENERIFE"
     },
-    "lat": 47.52,
-    "lon": 14.55
+    "lat": 28.32,
+    "lon": -16.57
+  },
+  {
+    "name": {
+      "it": "PORTO",
+      "en": "PORTO"
+    },
+    "lat": 41.1579,
+    "lon": -8.6291
+  },
+  {
+    "name": {
+      "it": "LISBONA",
+      "en": "LISBON"
+    },
+    "lat": 38.7223,
+    "lon": -9.1393
+  },
+  {
+    "name": {
+      "it": "LLORET DE MAR",
+      "en": "LLORET DE MAR"
+    },
+    "lat": 41.7006,
+    "lon": 2.8398
+  },
+  {
+    "name": {
+      "it": "BARI",
+      "en": "BARI"
+    },
+    "lat": 41.1171,
+    "lon": 16.8719
+  },
+  {
+    "name": {
+      "it": "MYKONOS",
+      "en": "MYKONOS"
+    },
+    "lat": 37.4467,
+    "lon": 25.3289
+  },
+  {
+    "name": {
+      "it": "VIENNA",
+      "en": "VIENNA"
+    },
+    "lat": 48.2082,
+    "lon": 16.3738
+  },
+  {
+    "name": {
+      "it": "BUCAREST",
+      "en": "BUCHAREST"
+    },
+    "lat": 44.4268,
+    "lon": 26.1025
+  },
+  {
+    "name": {
+      "it": "GINEVRA",
+      "en": "GENEVA"
+    },
+    "lat": 46.2044,
+    "lon": 6.1432
+  },
+  {
+    "name": {
+      "it": "LONDRA",
+      "en": "LONDON"
+    },
+    "lat": 51.5074,
+    "lon": -0.1278
+  },
+  {
+    "name": {
+      "it": "CANCUN",
+      "en": "CANCUN"
+    },
+    "lat": 21.1619,
+    "lon": -86.8515
   }
 ]
