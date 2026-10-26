@@ -25,3 +25,7 @@ body{animation:none!important}.signal-dot,.status-dot{background:#10b981!importa
 @media(max-width:768px){.journey-disclosure{margin:25px 5vw 50px}.journey-disclosure>summary{font-size:22px}.react-menu.is-open{max-height:calc(100dvh - 85px);overflow-y:auto}}
 
 @media(min-width:1101px){.web-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.web-info{padding:22px}.web-image{padding:18px}}
+
+/* Equal preview frames for every web project. */
+.web-grid article{grid-template-columns:112px minmax(0,1fr)}.web-image{height:auto;min-height:136px;padding:16px}.web-image img{width:80px;height:80px;max-width:100%;max-height:none;object-fit:contain}.web-info{display:flex;flex-direction:column;justify-content:center;gap:18px;min-width:0}.web-info h4{margin:0}.web-info>div{flex-wrap:wrap;gap:12px 20px}
+@media(max-width:768px){.web-grid article{grid-template-columns:104px minmax(0,1fr)}.web-image{padding:12px}.web-info{padding:20px;gap:16px}}
