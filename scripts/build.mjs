@@ -21,6 +21,7 @@ for(const source of sources){
   const thumb=`${basename}-${hash}-small.webp`;const small=await fs.readFile(`public/media/${thumb}`).catch(()=>sharp(buffer).rotate().resize({width:800,withoutEnlargement:true}).webp({quality:77}).toBuffer());await fs.writeFile(`public/media/${thumb}`,small);assets[source].thumb=`media/${thumb}`;optimizedBytes+=small.length;
  }
 }
+assets['../img/logo.png']={src:'brand/schianology-symbol.svg',width:1000,height:1000};
 await fs.writeFile('src/data/assets.json',JSON.stringify(assets));
 await sharp('public/'+assets['../img/logo.png'].src).negate({alpha:false}).webp().toFile('public/favicon-white.webp');
 await fs.copyFile('fonts/Gyroscope-Sans.woff2','public/fonts/Gyroscope-Sans.woff2');
