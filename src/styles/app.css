@@ -31,3 +31,6 @@ body{animation:none!important}.signal-dot,.status-dot{background:#10b981!importa
 @media(max-width:768px){.web-grid article{grid-template-columns:104px minmax(0,1fr)}.web-image{padding:12px}.web-info{padding:20px;gap:16px}}
 
 @media(min-width:769px){.brand-projects{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(min-width:1280px){.brand-projects{grid-template-columns:repeat(4,minmax(0,1fr))}.brand-projects .work-title{font-size:25px}}
+
+/* Monochrome editorial portrait with its final photographic framing. */
+.photo-wrapper .profile-img{object-position:50% 40%;transform:none;filter:none}
