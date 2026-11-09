@@ -8,31 +8,31 @@ const translations = {
       // Homepage
       home_status: "Available for branding & visual projects",
       home_tagline: "Graphic & Visual Designer",
-      home_intro: "Shaping bold visual identities, streetwear culture, textile print files, and digital aesthetics. Focused on singular creative execution and clean brand narratives.",
+      home_intro: "I work on brand identity, visual identity, creative direction and graphic direction. When needed, I also develop the front-end.",
       home_cta_works: "Explore Selected Works",
       home_cta_about: "Read My Story",
       home_pillars_label: "Core Disciplines:",
-      home_pillar_1: "Streetwear & Merchandising",
-      home_pillar_2: "Brand Identity Systems",
-      home_pillar_3: "Music Cover Artworks",
-      home_pillar_4: "UI & Frontend Code",
+      home_pillar_1: "Brand Identity",
+      home_pillar_2: "Visual Identity",
+      home_pillar_3: "Creative Direction",
+      home_pillar_4: "Graphic Direction",
       home_selected_title: "Featured Projects",
       home_card_1_cat: "Brand Identity & NFC Ecosystem",
       home_card_1_desc: "Visual identity, logo system and brand guidelines for an NFC ecosystem connecting physical touchpoints to digital experiences.",
-      home_card_2_cat: "Visual Identity & Packaging",
-      home_card_2_desc: "Contemporary gourmet identity with strong typographic harmony, custom packaging, and balanced modern layouts.",
+      home_card_2_cat: "Visual Identity & Graphic Direction",
+      home_card_2_desc: "A contemporary gourmet identity with balanced typography and consistent visual communication.",
       home_contact_heading: "Let's build something authentic.",
-      home_contact_sub: "Have an upcoming project, clothing drop, or visual identity to craft?",
+      home_contact_sub: "Have a visual identity to develop or a project that needs creative and graphic direction?",
       home_contact_btn: "Get in Touch",
   
       // About Me
       about_status: "Open to new opportunities",
-      about_role: "Born <b>Graphic Designer</b> and evolved into <b>Visual Designer</b>.",
+      about_role: "I work on <b>brand identity</b>, <b>visual identity</b>, <b>creative direction</b> and <b>graphic direction</b>, with <b>front-end development</b> when needed.",
       about_tag_location: "Naples, Italy",
       about_tag_birth: "17th October 1998",
       about_tag_badge: "Visual & UI Creator",
       about_stats_title: "Core Skills & Stats",
-      about_stats_sub: "My primary expertise is rooted in <b>Graphic & Visual Design</b>. Web Development, cultural interests, and international adaptability complete my creative profile.",
+      about_stats_sub: "My work focuses on <b>brand identity, visual identity, creative direction and graphic direction</b>. Front-end development complements my practice when the project calls for it.",
       tag_primary_focus: "Primary Focus",
       title_design_software: "Design & Media Software",
       continuous_learning_note: "<b>Continuous Evolution:</b> Committed to daily technical growth and actively expanding software workflows.",
@@ -78,7 +78,7 @@ const translations = {
       // Journey Timeline (Refined English)
       journey_tag: "Background",
       journey_title: "My Journey",
-      journey_sub: "From early self-taught experiments to streetwear brand architecture, agrifood export identity, and commercial discipline.",
+      journey_sub: "From self-taught experiments to streetwear, brand identity and visual communication for Italian food brands.",
   
       journey_01_phase: "01 / The Turning Point",
       journey_01_title: "From Culinary Aspirations to Digital Craft",
@@ -94,11 +94,11 @@ const translations = {
   
       journey_04_phase: "04 / The Brand Venture",
       journey_04_title: "Co-Founding Exxxplicit & Generating Cultural Resonance",
-      journey_04_text: "Fascinated by fashion culture, I co-founded the streetwear label <b>Exxxplicit</b> alongside two partners. Taking full ownership of art direction, I managed everything from textile print files to packaging and marketing campaigns. I crafted a bold concept bridging extreme emotional intimacy, sexuality, and sentimentality—a distinctive narrative that resonated with our audience, sparked spontaneous social sharing, and consistently produced sold-out collections. While the partnership eventually ran its course due to misaligned long-term visions, the venture provided rigorous, trial-by-fire experience in real-world brand building.",
+      journey_04_text: "With two partners, I founded <b>Exxxplicit</b> and led its visual direction, from screen-printing files to digital communication. Its aesthetic, rooted in emotion and intimacy, generated organic engagement and repeated sell-outs. Although differing visions brought the project to an end, it gave me practical experience in production and independent brand building, from concept to finished product.",
   
       journey_05_phase: "05 / Agrifood Identity & Export",
-      journey_05_title: "The Tokko.it Project & Visual Packaging",
-      journey_05_text: "Following the streetwear chapter, I teamed up with one of my previous partners to support an entrepreneurial venture in the premium agrifood sector: <b>Tokko</b> (<a href='https://www.instagram.com/tokko__it/' target='_blank' rel='noopener noreferrer' style='color: inherit; text-decoration: underline;'>@tokko__it</a>). The enterprise focused on exporting genuine Italian culinary delicacies across Italy and European markets. I oversaw the full visual architecture: crafting a cohesive brand identity, premium packaging, product labeling, and structured social media curation to communicate authenticity and gastronomic excellence on an international scale.",
+      journey_05_title: "Tokko.it & Visual Identity",
+      journey_05_text: "After Exxxplicit, I worked with a former partner on <b>Tokko</b> (<a href=\"https://www.instagram.com/tokko__it/\" target=\"_blank\" rel=\"noopener noreferrer\">@tokko__it</a>), a brand bringing Italian gourmet food to domestic and European markets. I handled visual identity, photography and Instagram editorial direction, building a consistent visual identity that highlighted the authenticity and gourmet appeal of Made in Italy.",
   
       journey_06_phase: "06 / Commercial Discipline",
       journey_06_title: "Retail Ethics & Readier Than Ever",
@@ -114,31 +114,31 @@ const translations = {
       // Homepage
       home_status: "Disponibile per progetti di branding e visual design",
       home_tagline: "Graphic & Visual Designer",
-      home_intro: "Creo identità visive incisive, cultura streetwear, file di stampa tessile ed estetica digitale contemporanea. Focus sulla precisione esecutiva e narrazioni visive pulite.",
+      home_intro: "Mi occupo di brand identity, identità visiva, direzione creativa e direzione grafica. Quando serve, sviluppo anche il front-end.",
       home_cta_works: "Scopri i Progetti",
       home_cta_about: "La Mia Storia",
       home_pillars_label: "Discipline Chiave:",
-      home_pillar_1: "Streetwear & Merchandising",
-      home_pillar_2: "Sistemi di Brand Identity",
-      home_pillar_3: "Cover Art Musicali",
-      home_pillar_4: "UI & Sviluppo Frontend",
+      home_pillar_1: "Brand Identity",
+      home_pillar_2: "Identità visiva",
+      home_pillar_3: "Direzione creativa",
+      home_pillar_4: "Direzione grafica",
       home_selected_title: "Progetti in Evidenza",
       home_card_1_cat: "Brand Identity & Ecosistema NFC",
       home_card_1_desc: "Identità visiva, sistema di logo e linee guida per un ecosistema NFC che connette punti di contatto fisici a esperienze digitali.",
-      home_card_2_cat: "Identità Visiva & Packaging",
-      home_card_2_desc: "Identità gourmet contemporanea con forte equilibrio tipografico, packaging su misura e impaginazione minimalista.",
+      home_card_2_cat: "Identità Visiva & Direzione Grafica",
+      home_card_2_desc: "Identità gourmet contemporanea, equilibrio tipografico e comunicazione visiva coerente.",
       home_contact_heading: "Costruiamo qualcosa di autentico.",
-      home_contact_sub: "Hai un progetto, un lancio abbigliamento o un'identità visiva da sviluppare?",
+      home_contact_sub: "Hai un’identità visiva da sviluppare o un progetto che richiede direzione creativa e grafica?",
       home_contact_btn: "Contattami",
   
       // About Me
       about_status: "Disponibile per nuove opportunità",
-      about_role: "Nato <b>Graphic Designer</b> ed evoluto in <b>Visual Designer</b>.",
+      about_role: "Mi occupo di <b>brand identity</b>, <b>identità visiva</b>, <b>direzione creativa</b> e <b>direzione grafica</b>. Quando occorre, anche di <b>sviluppo front-end</b>.",
       about_tag_location: "Napoli, Italia",
       about_tag_birth: "17 Ottobre 1998",
       about_tag_badge: "Visual & UI Creator",
       about_stats_title: "Competenze & Statistiche",
-      about_stats_sub: "Il mio nucleo principale è il <b>Graphic & Visual Design</b>. Lo sviluppo web, le passioni culturali e l'adattabilità internazionale completano il mio profilo creativo.",
+      about_stats_sub: "Il mio lavoro si concentra su <b>brand identity, identità visiva, direzione creativa e direzione grafica</b>. Lo sviluppo front-end completa il mio profilo quando il progetto lo richiede.",
       tag_primary_focus: "Focus Principale",
       title_design_software: "Software di Design & Media",
       continuous_learning_note: "<b>Evoluzione Continua:</b> Forte propensione all'aggiornamento costante e all'apprendimento rapido di nuovi software e workflow.",
@@ -184,7 +184,7 @@ const translations = {
       // Journey Timeline (Italiano Corretto ed Editoriale)
       journey_tag: "Background",
       journey_title: "Il Mio Percorso",
-      journey_sub: "Dalle prime sperimentazioni da autodidatta allo streetwear, fino al packaging per l'export agroalimentare e alla maturità commerciale.",
+      journey_sub: "Dalle prime sperimentazioni da autodidatta allo streetwear, fino alla brand identity e alla comunicazione visiva per il settore agroalimentare.",
   
       journey_01_phase: "01 / La Consapevolezza",
       journey_01_title: "Dall'Istituto Alberghiero alla Vocazione Digitale",
@@ -200,11 +200,11 @@ const translations = {
   
       journey_04_phase: "04 / Il Progetto Moda",
       journey_04_title: "La Nascita di Exxxplicit & I Sold-Out",
-      journey_04_text: "Attratto dalla cultura dell'abbigliamento, ho fondato con due soci il brand indipendente <b>Exxxplicit</b>. Qui ho assunto la direzione visiva completa: dalla creazione dei file di stampa serigrafica e packaging, fino alla strategia di comunicazione digitale. Ho concepito un'estetica visiva basata sull'unione viscerale tra sentimento, amore ed esplicita intimità. L'idea ha innescato un vero trend, generando un forte engagement organico e portando le collezioni a ripetuti sold-out. Nonostante la conclusione del progetto per divergenze di visione con i soci, questa esperienza mi ha formato concretamente nella gestione reale della produzione e del brand building.",
+      journey_04_text: "Con due soci ho fondato <b>Exxxplicit</b>, curandone la direzione visiva: file per la serigrafia e comunicazione digitale. L'estetica, legata a sentimento e intimità, ha generato coinvolgimento organico e ripetuti sold-out. Il progetto si è concluso per divergenze di visione, lasciandomi un'esperienza concreta nella gestione della produzione e nella costruzione di un brand indipendente, dall'idea al prodotto finale.",
   
       journey_05_phase: "05 / Branding Agroalimentare & Export",
-      journey_05_title: "L'Esperienza Tokko.it & Il Packaging Gourmet",
-      journey_05_text: "Subito dopo Exxxplicit, ho avviato una nuova collaborazione insieme a uno dei miei precedenti soci per affiancare un imprenditore nello sviluppo del brand <b>Tokko</b> (<a href='https://www.instagram.com/tokko__it/' target='_blank' rel='noopener noreferrer' style='color: inherit; text-decoration: underline;'>@tokko__it</a>). Il progetto era focalizzato sull'export di eccellenze gastronomiche e agroalimentari italiane verso i mercati nazionali ed europei. Ho gestito l'intero costrutto visivo del brand: dallo studio del packaging alimentare e dell'etichettatura conforme, fino alla narrazione fotografica e alla linea editoriale della pagina Instagram, valorizzando l'autenticità e l'estetica gourmet del Made in Italy.",
+      journey_05_title: "L’esperienza Tokko.it e l’identità visiva",
+      journey_05_text: "Dopo Exxxplicit ho collaborato con un precedente socio allo sviluppo di <b>Tokko</b> (<a href=\"https://www.instagram.com/tokko__it/\" target=\"_blank\" rel=\"noopener noreferrer\">@tokko__it</a>), brand dedicato alle eccellenze agroalimentari italiane per i mercati nazionali ed europei. Ho curato identità visiva, fotografia e linea editoriale Instagram, costruendo un'identità visiva coerente e valorizzando l'autenticità e l'estetica gourmet del Made in Italy.",
   
       journey_06_phase: "06 / Maturità Lavorativa",
       journey_06_title: "Etica Professionale & Nuove Sfide",
@@ -213,8 +213,8 @@ const translations = {
   };
   
 
-Object.assign(translations.it, {"extra_0": "Homepage", "extra_1": "Progetti", "extra_2": "Chi sono", "extra_3": "Vai al contenuto", "extra_4": "DESIGNER INDIPENDENTE / NAPOLI, IT", "extra_5": "ESPLORAZIONI VISIVE — PORTFOLIO", "extra_6": "IDENTITÀ DI BRAND. ESPERIENZE DIGITALI. CULTURA VISIVA.", "extra_7": "SCORRI PER ESPLORARE ↓", "extra_8": "IN EVIDENZA / 02", "extra_9": "PARLIAMONE ↗", "extra_10": "TORNA SU ↑", "extra_11": "AS / ESPLORAZIONI GLOBALI", "extra_12": "TRASCINA PER ESPLORARE ↔", "extra_13": "ESPLORA ↗", "extra_14": "RIPRISTINA ↺", "extra_15": "Portfolio di grafica e visual design", "extra_16": "Identità visiva & Direzione artistica", "extra_17": "Creo identità di brand, visual editoriali ed estetiche di impatto. Lo sviluppo web è il mio valore aggiunto per trasformare i concetti visivi in interfacce funzionali.", "extra_18": "Progetti in evidenza", "extra_19": "Identità di brand & Direzione artistica", "extra_20": "Sistemi di identità completi, con attenzione alla tipografia, alla narrazione e alla coerenza visiva.", "extra_21": "Identità visiva completa, sistema di logo e linee guida per un ecosistema NFC che collega i punti di contatto fisici a interazioni digitali immediate.", "extra_22": "Identità di brand completa, linee guida del logo, campagne pubblicitarie social e mockup di interfacce e-commerce mobile per un marchio gourmet italiano.", "extra_23": "Progetto completo di identità visiva, con attenzione alla coerenza, al tono di voce, al sistema tipografico e all’estetica del brand.", "extra_24": "Scopri il progetto", "extra_25": "Artwork & Poster", "extra_26": "Galleria visiva", "extra_27": "Una selezione di poster, sperimentazioni editoriali e arti visive.", "extra_28": "Competenze complementari", "extra_29": "Progetti interattivi & Sviluppo web", "extra_30": "Progetti frontend sviluppati per dare vita e interattività ai layout grafici.", "extra_31": "Sviluppo del mio portfolio personale, con attenzione a UI/UX, animazioni fluide e design responsive.", "extra_32": "Un catalogo cinematografico personale basato sulla narrazione visiva, un’interfaccia pulita e un’esperienza fluida e responsive. I film sono suddivisi per genere per una navigazione intuitiva.", "extra_33": "Sito web", "extra_34": "Progetto di identità di brand", "extra_35": "Un sistema completo di identità di brand per un ecosistema contactless basato sulla tecnologia NFC. Semplicità, connessione diretta ed estetica minimale uniscono le interazioni fisiche alle esperienze digitali.", "extra_36": "Un progetto di identità di brand basato su coerenza visiva, tipografia personalizzata, packaging ed estetica gourmet contemporanea.", "extra_37": "Un’identità streetwear d’impatto, con coerenza visiva, tipografia essenziale, mockup di merchandising e una direzione artistica riconoscibile.", "extra_38": "Torna ai progetti", "extra_39": "Curriculum & Certificati", "extra_40": "Il mio percorso professionale, da approfondire.", "extra_41": "Scarica il mio CV", "extra_42": "Scarica CV · PDF", "extra_43": "CV aggiornato e certificati originali del mio percorso formativo.", "extra_44": "Apri certificato ↗", "extra_45": "Scarica PDF ↓", "extra_46": "Photoshop · Visual Designer", "extra_47": "Corso di grafica", "extra_48": "Certificato di stage", "extra_49": "Inglese · B1", "extra_50": "Apri CV ↗"});
-Object.assign(translations.en, {"extra_0": "Homepage", "extra_1": "Works", "extra_2": "About Me", "extra_3": "Skip to content", "extra_4": "INDEPENDENT DESIGNER / NAPLES, IT", "extra_5": "VISUAL EXPLORATIONS — PORTFOLIO", "extra_6": "BRAND IDENTITIES. DIGITAL EXPERIENCES. VISUAL CULTURE.", "extra_7": "SCROLL TO EXPLORE ↓", "extra_8": "SELECTED / 02", "extra_9": "LET’S TALK ↗", "extra_10": "BACK TO TOP ↑", "extra_11": "AS / WORLD EXPLORER", "extra_12": "DRAG TO EXPLORE ↔", "extra_13": "EXPLORE ↗", "extra_14": "RESET ↺", "extra_15": "Graphic & Visual Portfolio", "extra_16": "Visual Identity & Art Direction", "extra_17": "Specialized in crafting brand identities, editorial visuals, and impactful aesthetics. Web development is my added value to translate visual concepts into functional interfaces.", "extra_18": "Featured Case Studies", "extra_19": "Brand Identity & Direction", "extra_20": "Comprehensive identity systems designed with careful attention to typography, storytelling, and visual consistency.", "extra_21": "Complete visual identity, logo design system, and brand guidelines for an NFC-driven ecosystem connecting everyday physical touchpoints to instant digital interactions.", "extra_22": "Full brand identity, logo design guidelines, social media advertising campaigns, and mobile e-commerce UI mockups for an Italian gourmet food brand.", "extra_23": "Complete visual identity project developed with attention to visual coherence, distinct tone of voice, typography system, and brand aesthetic.", "extra_24": "View Case Study", "extra_25": "Artworks & Posters", "extra_26": "Visual Showcase", "extra_27": "A curated selection of poster designs, editorial explorations, and visual arts.", "extra_28": "Secondary / Extra Skillset", "extra_29": "Interactive & Web Builds", "extra_30": "Frontend implementations developed to give interactive life to design layouts.", "extra_31": "Development of my personal portfolio, focused on UI/UX, smooth animations, and responsive design.", "extra_32": "A personal movie catalog built with a focus on visual storytelling, clean UI, and a smooth, fully responsive user experience. Designed to showcase curated films divided by genre with an intuitive browsing flow.", "extra_33": "Website", "extra_34": "Brand Identity Case Study", "extra_35": "A comprehensive brand identity system designed for a contactless ecosystem powered by NFC technology. Built around simplicity, direct connectivity, and minimal aesthetics, bridging physical interactions with seamless digital experiences.", "extra_36": "A brand identity project developed with a focus on visual consistency, custom typography, packaging design, and contemporary gourmet aesthetics.", "extra_37": "A bold streetwear brand identity crafted with strong emphasis on visual consistency, raw typographic layout, merchandising mockups, and consistent art direction.", "extra_38": "Torna a Works", "extra_39": "Curriculum & Certificates", "extra_40": "My professional background, ready to explore.", "extra_41": "Download my CV", "extra_42": "Download CV · PDF", "extra_43": "Updated CV and original training certificates.", "extra_44": "View certificate ↗", "extra_45": "Download PDF ↓", "extra_46": "Photoshop · Visual Designer", "extra_47": "Graphic design course", "extra_48": "Internship certificate", "extra_49": "English · B1", "extra_50": "Open CV ↗"});
+Object.assign(translations.it, {"extra_0": "Homepage", "extra_1": "Progetti", "extra_2": "Chi sono", "extra_3": "Vai al contenuto", "extra_4": "DESIGNER INDIPENDENTE / NAPOLI, IT", "extra_5": "ESPLORAZIONI VISIVE — PORTFOLIO", "extra_6": "IDENTITÀ DI BRAND. ESPERIENZE DIGITALI. CULTURA VISIVA.", "extra_7": "SCORRI PER ESPLORARE ↓", "extra_8": "IN EVIDENZA / 02", "extra_9": "PARLIAMONE ↗", "extra_10": "TORNA SU ↑", "extra_11": "AS / ESPLORAZIONI GLOBALI", "extra_12": "TRASCINA PER ESPLORARE ↔", "extra_13": "ESPLORA ↗", "extra_14": "RIPRISTINA ↺", "extra_15": "Portfolio di grafica e visual design", "extra_16": "Identità visiva & Direzione artistica", "extra_17": "Creo identità di brand, visual editoriali ed estetiche di impatto. Lo sviluppo web è il mio valore aggiunto per trasformare i concetti visivi in interfacce funzionali.", "extra_18": "Progetti in evidenza", "extra_19": "Identità di brand & Direzione artistica", "extra_20": "Sistemi di identità completi, con attenzione alla tipografia, alla narrazione e alla coerenza visiva.", "extra_21": "Identità visiva completa, sistema di logo e linee guida per un ecosistema NFC che collega i punti di contatto fisici a interazioni digitali immediate.", "extra_22": "Identità di brand completa, linee guida del logo, campagne pubblicitarie social e mockup di interfacce e-commerce mobile per un marchio gourmet italiano.", "extra_23": "Progetto completo di identità visiva, con attenzione alla coerenza, al tono di voce, al sistema tipografico e all’estetica del brand.", "extra_24": "Scopri il progetto", "extra_25": "Artwork & Poster", "extra_26": "Galleria visiva", "extra_27": "Una selezione di poster, sperimentazioni editoriali e arti visive.", "extra_28": "Competenze complementari", "extra_29": "Progetti interattivi & Sviluppo web", "extra_30": "Progetti frontend sviluppati per dare vita e interattività ai layout grafici.", "extra_31": "Sviluppo del mio portfolio personale, con attenzione a UI/UX, animazioni fluide e design responsive.", "extra_32": "Un catalogo cinematografico personale basato sulla narrazione visiva, un’interfaccia pulita e un’esperienza fluida e responsive. I film sono suddivisi per genere per una navigazione intuitiva.", "extra_33": "Sito web", "extra_34": "Progetto di identità di brand", "extra_35": "Un sistema completo di identità di brand per un ecosistema contactless basato sulla tecnologia NFC. Semplicità, connessione diretta ed estetica minimale uniscono le interazioni fisiche alle esperienze digitali.", "extra_36": "Un progetto di identità di brand basato su coerenza visiva, tipografia e direzione grafica per il settore gourmet.", "extra_37": "Un’identità streetwear d’impatto, con coerenza visiva, tipografia essenziale, mockup di merchandising e una direzione artistica riconoscibile.", "extra_38": "Torna ai progetti", "extra_39": "Curriculum & Certificati", "extra_40": "Il mio percorso professionale, da approfondire.", "extra_41": "Scarica il mio CV", "extra_42": "Scarica CV · PDF", "extra_43": "CV aggiornato e certificati originali del mio percorso formativo.", "extra_44": "Apri certificato ↗", "extra_45": "Scarica PDF ↓", "extra_46": "Photoshop · Visual Designer", "extra_47": "Corso di grafica", "extra_48": "Certificato di stage", "extra_49": "Inglese · B1", "extra_50": "Apri CV ↗"});
+Object.assign(translations.en, {"extra_0": "Homepage", "extra_1": "Works", "extra_2": "About Me", "extra_3": "Skip to content", "extra_4": "INDEPENDENT DESIGNER / NAPLES, IT", "extra_5": "VISUAL EXPLORATIONS — PORTFOLIO", "extra_6": "BRAND IDENTITIES. DIGITAL EXPERIENCES. VISUAL CULTURE.", "extra_7": "SCROLL TO EXPLORE ↓", "extra_8": "SELECTED / 02", "extra_9": "LET’S TALK ↗", "extra_10": "BACK TO TOP ↑", "extra_11": "AS / WORLD EXPLORER", "extra_12": "DRAG TO EXPLORE ↔", "extra_13": "EXPLORE ↗", "extra_14": "RESET ↺", "extra_15": "Graphic & Visual Portfolio", "extra_16": "Visual Identity & Art Direction", "extra_17": "Specialized in crafting brand identities, editorial visuals, and impactful aesthetics. Web development is my added value to translate visual concepts into functional interfaces.", "extra_18": "Featured Case Studies", "extra_19": "Brand Identity & Direction", "extra_20": "Comprehensive identity systems designed with careful attention to typography, storytelling, and visual consistency.", "extra_21": "Complete visual identity, logo design system, and brand guidelines for an NFC-driven ecosystem connecting everyday physical touchpoints to instant digital interactions.", "extra_22": "Full brand identity, logo design guidelines, social media advertising campaigns, and mobile e-commerce UI mockups for an Italian gourmet food brand.", "extra_23": "Complete visual identity project developed with attention to visual coherence, distinct tone of voice, typography system, and brand aesthetic.", "extra_24": "View Case Study", "extra_25": "Artworks & Posters", "extra_26": "Visual Showcase", "extra_27": "A curated selection of poster designs, editorial explorations, and visual arts.", "extra_28": "Secondary / Extra Skillset", "extra_29": "Interactive & Web Builds", "extra_30": "Frontend implementations developed to give interactive life to design layouts.", "extra_31": "Development of my personal portfolio, focused on UI/UX, smooth animations, and responsive design.", "extra_32": "A personal movie catalog built with a focus on visual storytelling, clean UI, and a smooth, fully responsive user experience. Designed to showcase curated films divided by genre with an intuitive browsing flow.", "extra_33": "Website", "extra_34": "Brand Identity Case Study", "extra_35": "A comprehensive brand identity system designed for a contactless ecosystem powered by NFC technology. Built around simplicity, direct connectivity, and minimal aesthetics, bridging physical interactions with seamless digital experiences.", "extra_36": "A brand identity project focused on visual consistency, typography and graphic direction for the gourmet sector.", "extra_37": "A bold streetwear brand identity crafted with strong emphasis on visual consistency, raw typographic layout, merchandising mockups, and consistent art direction.", "extra_38": "Torna a Works", "extra_39": "Curriculum & Certificates", "extra_40": "My professional background, ready to explore.", "extra_41": "Download my CV", "extra_42": "Download CV · PDF", "extra_43": "Updated CV and original training certificates.", "extra_44": "View certificate ↗", "extra_45": "Download PDF ↓", "extra_46": "Photoshop · Visual Designer", "extra_47": "Graphic design course", "extra_48": "Internship certificate", "extra_49": "English · B1", "extra_50": "Open CV ↗"});
 
   function setLanguage(lang) {
     const currentLang = translations[lang] ? lang : "it";
