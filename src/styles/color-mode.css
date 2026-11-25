@@ -4,12 +4,12 @@
 [data-theme=dark] .nav-homepage .navbar{background:rgb(16 17 18 / .94)!important}
 [data-theme=dark] .logo{filter:invert(1)}
 [data-theme=dark] :is(.nav-list li a,.work-card,.profile-name,.profile-role b,.skills-title,.skills-subtitle b,.category-header h3,.tool-name,.stat-points,.hobby-header,.timeline-content h3,.timeline-content b,.certificate-links a){color:var(--ink)}
-[data-theme=dark] :is(.future-eyebrow,.future-copy h1 span,.future-bio,.core-bar-label,.core-tag:before,.section-counter,.work-cat,.work-desc,.future-footer span,.eyebrow,.web-info p,.profile-role,.skills-subtitle,.tool-name small,.stat-points span,.work-style-note p,.hobby-box p,.sub-label,.timeline-phase,.timeline-content p,.documents-section .section-heading-wrap p,.document-type,.dialog-intro){color:var(--muted)}
+[data-theme=dark] :is(.future-eyebrow,.future-copy h1 span,.future-bio,.core-bar-label,.core-tag:before,.section-counter,.work-cat,.work-desc,.future-footer span,.eyebrow,.profile-role,.skills-subtitle,.tool-name small,.stat-points span,.work-style-note p,.hobby-box p,.sub-label,.timeline-phase,.timeline-content p,.documents-section .section-heading-wrap p,.document-type,.dialog-intro){color:var(--muted)}
 [data-theme=dark] :is(.stat-category,.timeline-content,.projectContent){background:var(--surface)!important;border-color:var(--line)!important}
 [data-theme=dark] :is(.photo-wrapper,.status-badge,.meta-tag,.hobby-box,.tools-pills span,.learning-note-box,.work-style-note,.category-tag.extra){background:var(--surface);color:var(--ink);border-color:var(--line)}
 [data-theme=dark] :is(.learning-note-box,.work-style-note){border-left-color:var(--ink)}
-[data-theme=dark] :is(.work-img-box,.art-grid button,.web-image,.certificate-preview,.bar-track){background:var(--soft)}
-[data-theme=dark] :is(.block-title,.web-grid article,.about-section,.skills-disclosure,.documents-disclosure>summary,.certificate-card,.timeline-container,.tools-pills-wrap,.photo-frame,.lang-switcher,.project-filters button){border-color:var(--line)}
+[data-theme=dark] :is(.work-img-box,.art-grid button,.certificate-preview,.bar-track){background:var(--soft)}
+[data-theme=dark] :is(.block-title,.about-section,.skills-disclosure,.documents-disclosure>summary,.certificate-card,.timeline-container,.tools-pills-wrap,.photo-frame,.lang-switcher,.project-filters button){border-color:var(--line)}
 [data-theme=dark] :is(.future-button,.project-filters button[aria-pressed=true],.lang-btn.active,.category-tag.main,.dialog-close){background:var(--control);color:var(--control-text);border-color:var(--control)}
 [data-theme=dark] .future-button:hover{background:var(--soft);color:var(--ink)}
 [data-theme=dark] .lang-btn{color:var(--muted)}[data-theme=dark] .lang-btn.active{color:var(--control-text)}
@@ -23,5 +23,3 @@
 [data-theme=dark] :is(a,button,canvas):focus-visible{outline-color:#c3c8cc}
 [data-theme=dark] ::selection{background:#efeeee;color:#101112}
 @media(max-width:768px){.theme-toggle{margin-left:14px;padding:9px}.theme-toggle span{display:none}.menu-toggle{margin-left:auto}[data-theme=dark] .react-menu.is-open{background:var(--paper);border-color:var(--line)}}
-
-[data-theme=dark] .web-image img{filter:grayscale(1) invert(1)}
